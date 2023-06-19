@@ -5,6 +5,9 @@ import Deuxieme from './composants/Deuxieme';
 import Troisieme from './composants/Troisieme';
 import Quatrieme from './composants/Quatrieme';
 import Cinquieme from './composants/Cinquieme';
+import Sixieme from "./composants/Sixieme"
+import Septieme from './composants/Septieme';
+import Huitieme from './composants/Huitieme';
 
 export default function App() {
   // code
@@ -15,6 +18,9 @@ export default function App() {
   // bon appétit 13h40 !!! 
   return (
     <View style={styles.container}>
+      <Huitieme />
+      <Septieme />
+      <Sixieme />
       <Cinquieme />
       <Quatrieme />
       <Troisieme />

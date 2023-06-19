@@ -74,3 +74,7 @@ formation qui est un tableau qui contient les valeurs suivantes
 afficher l'ensemble des valeurs stockées dans la variable formation dans la vue du composant Sixieme 
 
 une fois réalisé, exécuter le composant Sixieme dans le composant App 
+
+http://sharemycode.fr/jqg
+
+https://github.com/webdevproformation/react-native-d-2023
