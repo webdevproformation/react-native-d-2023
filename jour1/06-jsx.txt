@@ -54,3 +54,11 @@ dans la partie vue du composant (return) vous devez afficher le texte suivant
 </View>
 
 exécuter le composant Quatrieme dans le composant App 
+
+note de cours : 
+https://github.com/webdevproformation/react-native-d-2023
+
+support de cours 
+https://formation.webdevpro.net/react-native (directement dans la barre d'adresse  pas dans Google)
+login : react-native
+password : facebook
