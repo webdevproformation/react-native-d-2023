@@ -1,8 +1,6 @@
 créer le composant Neuvieme 
-
 ce composant contient une variable qui s'appelle etudiants
 qui contient les valeurs suivantes :
-
 [
       { nom : "Alain", role : "admin" },
       { nom : "Benoit", role : "redacteur" },
@@ -12,3 +10,5 @@ dans la partie vue du composant vous allez parcourir chacun des étudiants
 si l'étudiant est admin afficher le texte <Text>Alain peut gérer le site </Text>
 si l'étudiant n'est pas admin afficher le texte <Text>Benoit ne peut pas accéder à la gestion du site </Text>
 si l'étudiant est admin afficher le texte <Text>Céline peut gérer le site </Text>
+
+boucle qui contient une condition ternaire 
