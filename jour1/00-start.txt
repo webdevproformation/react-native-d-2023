@@ -1,0 +1,23 @@
+Créer un nouveau dossier sur votre ordinateur "react-native"
+Lancer Visual Studio Code 
+File > Open Folder > sélectionner le dossier "react-native"
+
+créer un nouveau dossier dans Visual Studio Code => jour1
+-------------------------------
+Malik HARRIZ
+malik.h@webdevpro.net (si vous avez des questions)
+
+React native (version smartphone de la librairie)
+-------------------------------
+
+toutes les notes de cours vont être partagées sur un github (créer dans peu de temps)
+
+-------------------------------
+
+support de cours 
+https://formation.webdevpro.net/react-native (directement dans la barre d'adresse  pas dans Google)
+login : react-native
+password : facebook
+
+attention login et password en minuscules
+

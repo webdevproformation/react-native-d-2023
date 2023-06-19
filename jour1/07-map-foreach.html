@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arbres = ["chêne", "bambou" , "pommier" , "poirier"] ;
+
+        arbres.forEach(function(item){
+            console.log(`<p>${item}</p>`)
+        })
+
+        const arbresAvecP = arbres.map(function(item){
+            return `<p>${item}</p>`
+        })
+
+        // map() copie le tableau arbres et pour chaque élément de la copie ajouter un p au debut et fin 
+        console.log(arbresAvecP); 
+        // [ "<p>chêne</p>", "<p>bambou</p>", "<p>pommier</p>", "<p>poirier</p>" ] 
+    </script>
+</body>
+</html>

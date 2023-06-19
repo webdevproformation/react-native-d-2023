@@ -1,0 +1,21 @@
+Présente React native => créer des applications mobiles en écrivant du javascript (Facebook)
+
+Pour pouvoir utiliser React native, il faut installer les logiciels suivants dans votre ordinateur 
+
+nodejs => version 12 https://nodejs.org/en
+android studio => éditeur de texte 
+               => emulateur 
+               => android => 1 Go 
+               => émulateur => 1Go
+               => en + OS dans l'émulateur 10Go 
+
+dans notre terminal 
+npx create-expo-app --template 
+jour1-decouverte (nom du projet pas d'espace dans les noms des projets)
+cd jour1-decouverte
+npm start 
+a 
+w => si ça ne fonctionne pas dans l'émulateur (version dans un navigateur web)
+
+meilleure set up (organisation) pour travailler de manière efficace sur un projet react native 
+

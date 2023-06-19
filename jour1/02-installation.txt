@@ -1,0 +1,34 @@
+support de cours 
+https://formation.webdevpro.net/react-native (directement dans la barre d'adresse  pas dans Google)
+login : react-native
+password : facebook
+
+nodejs (version 12 minimum ) xx
+
+Android Studio
+smartphone 
+expo 
+
+extension du Visual Studio Code 
+lancer un terminal depuis Visual Studio Code > choisir Command Prompt (et non PowerShell)
+node -v 
+
+'node' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+v16....
+
+=> installer la dernière version de nodejs quelquesoit la réponse du terminal 
+
+=> aller sur google https://nodejs.org/en (version 18)
+
+=> installer Android Studio (Editeur de Texte spécialisé dans le codage de logiciel pour smartphone équivalent de Visual Studio)
+-> nous allons utiliser la partie émulateur de smartphone de Android Studio
+=> https://developer.android.com/studio
+
+
+npx create-expo-app --template 
+y 
+jour1-decouverte
+cd jour1-decouverte
+npm start 

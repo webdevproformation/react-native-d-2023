@@ -1,0 +1,49 @@
+le fichier App.js c'est LE FICHIER qui est le point d'entrée de votre application 
+
+il y a 3 parties 
+
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+import => élément / composant que l'on utiliser dans notre composant 
+StatusBar
+StyleSheet, => ressemble beaucoup aux feuilles de style css 
+Text,  => équivalent de la balise html p h1 h2 
+View   => équivalent de la balise div => une zone dans votre design 
+
+LE COMPOSANT => fonction javascript classique 
+le nom de la fonction ==== le nom du fichier 
+
+export default function App() {
+    /// ... 
+    /// ... 
+    /// ... 
+    /// ... 
+  return ( // OBLIGATOIREMENT vous avez un return 
+    <View style={styles.container}> // jsx langage mix en html / js et xml 
+      <Text>autre test</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+// dernière partie du composant 
+const styles = StyleSheet.create({ // mini feuille de style css 
+  container: { // sélecteur css 
+    flex: 1, // régles css 
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+// cas pratique 
+
+1 créer dans le dossier composant un nouveau composant qui s'appelle 
+Deuxieme
+et ce composant affiche le texte suivant 
+"je sais créer un composant manuellement"
+2 exécuter ce composant en l'ajoutant dans le fichier App.js en dessous du composant <Premier /> 
+
+
+

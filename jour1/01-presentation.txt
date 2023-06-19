@@ -1,0 +1,36 @@
+=> React Native 
+
+librairie qui permet de créer des applications mobiles 
+créée par les équipes de Facebook 
+écrire du javascript (jsx) ==> traduit (transpiler / compilé) => 
+
+Android (Java / C# / Kotlin)
+iPhone MacOS  (Swift / )
+
+=> React native => un seul projet à réaliser => compiler sur les deux plateformes 
+
+=> idéal pour réaliser des sites dans lesquels vous avez à présenter de l'information 
+
+=> si vous avez à créer des applications qui nécessite une gestion fine de la mémoire 
+=> les langages natifs Java / Kotlin / C# / Swift sont meilleurs 
+
+=> React ou React Native =>  élément de base Composant 
+
+sur un projet html => élément de base <h1> <p> <ul>
+
+
+=> exemple de composant => stocker dans un fichier Menu.jsx 
+
+import {View} from "react-native"
+
+function Menu(){
+    return <View>Bienvenue</View>
+}
+
+export default Menu ; 
+
+=> bien comprendre javacript (notamment la version ES6 / version 2015)
+
+=> le site internet officiel de la librairie :     
+=> https://reactnative.dev/
+

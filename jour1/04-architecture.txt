@@ -1,0 +1,40 @@
+dans votre ordinateur vous allez trouver un nouveau dossier 
+jour1-decouverte 
+
+3 sous dossier 
+.expo/ => dossier de cache (ne pas toucher)
+assets => stocker des images / fichier pdf 
+node_modules => énorme dossier qui contient toutes les dépendances à notre projet React native (librairies dont react native dépend)
+pour faire fonctionner un projet react native IL FAUT OBLIGATOIREMENT avoir ce dossier présent 
+(ne pas toucher) ce dossier est créé automatiquement via la commande 
+npm create-expo-app --template 
+
+6 fichiers 
+.gitignore => permet de versionner notre projet en ignorant certains dossier (ne pas toucher)
+App.js => LE FICHIER IMPORTANT 
+       => LE COMPOSANT RACINE DE votre projet 
+       => le 1er fichier qui est exécuté => lancer tous les autres 
+
+       si vous modifiez ce fichier + Ctrl + S 
+       si HMR (Hot Module Reload) ne fonctionne pas 
+       r dans le terminal
+
+app.json 
+    méta information de votre application 
+    si vous pupliez votre application sur store 
+    Plays Store / Google Store 
+    important dans la phase de publication 
+
+babel.config.js => jsx => javascript  => expo => Java 
+React de base webpack / vite / parcel 
+(ne pas toucher)
+
+
+package.json (version de React native que vous utilisez )
+permet de savoir sur quelle version on est en train de travailler sur React Native 
+package-lock.json
+
+React native outil qui permet de créer de UI (User Interface)
+si vous avez besoin d'une base de données /
+ce sera une autre logiciel (qui peut être réalisé avec NodeJS / PHP / Ruby / Python )
+

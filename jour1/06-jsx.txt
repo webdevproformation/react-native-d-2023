@@ -1,0 +1,56 @@
+pouvez créer un nouveau composant 
+Troisieme 
+
+conseil 1 
+
+return ()
+permet à React Native de savoir où commence et où fini le jsx 
+
+conseil 2
+si vous devez afficher plusieurs composants dans votre composant
+nécessairement dans le return il y a UN COMPOSANT qui contient tous les autres
+<View>
+</View> 
+
+<></> => Fragment 
+
+conseil 3 :
+il est possible d'ajouter dynamiquement des variables dans le jsx 
+via la syntaxe suivante 
+
+<Text>{texte1}</Text>  => {variable} => interpolation
+
+
+Conseil4 
+vous pouvez créer n'importe quel type de variable avant le return du composant 
+
+const a = "hello"
+const b = 1
+const c = [1,2]
+const d = { largeur : 10 }
+function e(){
+    return "toto"
+}
+
+dans le return 
+{a}
+{c[0]}
+{d.largeur}
+{e()}
+
+Cas pratique créer un nouveau composant Quatrieme
+
+ce composant contient une variable qui s'appelle 
+data = [
+    { id : 1 , titre : "article 1", auteur : "Victor Hugo"},
+    { id : 2 , titre : "article 2", auteur : "George Sand"},
+]
+import { View , Text } from "react-native"
+
+dans la partie vue du composant (return) vous devez afficher le texte suivant 
+<View>
+    <Text> Victor Hugo a écrit l'article numéro 1</Text>
+    <Text> George Sand est l'auteure de article 2</Text>
+</View>
+
+exécuter le composant Quatrieme dans le composant App 
