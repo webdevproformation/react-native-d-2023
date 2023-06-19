@@ -62,3 +62,15 @@ support de cours
 https://formation.webdevpro.net/react-native (directement dans la barre d'adresse  pas dans Google)
 login : react-native
 password : facebook
+
+------------------
+
+créer un nouveau fichier Sixieme.jsx 
+contient le composant Sixieme 
+dans ce composant il y a une variable qui s'appelle 
+formation qui est un tableau qui contient les valeurs suivantes 
+[js, node, angular, react, jquery]
+
+afficher l'ensemble des valeurs stockées dans la variable formation dans la vue du composant Sixieme 
+
+une fois réalisé, exécuter le composant Sixieme dans le composant App 
