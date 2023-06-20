@@ -1,0 +1,45 @@
+Attention nous allons utiliser display flex pour réaliser des mises en page sur React Native 
+
+<View>
+1  => AUTOMATIQUEMENT display flex qui est utilisée par défaut 
+=> pas besoin de lui écrire display:flex 
+car ajouté automatiquement 
+
+2 display flex 
+les enfants directs de <header> => l'un à coté de l'autre
+QUAND on est sur React native 
+les éléments sont l'un en dessous de l'autre 
+flex-direction: column 
+ajouté automatiquement 
+
+=> dès que vous utilisez le composant <View>
+display:flex 
+flex-direction: column 
+
+si j'ai besoin de mettre les éléments enfant de View l'un à côté de l'autre 
+flex-direction : row 
+
+=> attention si <View> est en 
+flex-direction : column => justify-content va gérer l'espace verticalement
+
+flex-direction : row => justify-content va gérer l'espace horizontalement 
+
+=> le concept de responsive design ne s'applique pas pour les smartphones
+=> la largeur de l'écran ne bouge pas 
+
+=> vous utilisez un logiciel Expo => afficher le code 
+on n'utilise pas Chrome / Firefox / Opera version mobile 
+
+ouvrir le terminal dans lequel vous avez saisit la commande
+npm start 
+Ctrl + C 
+
+cd ..
+npx create-expo-app --template
+Blank
+jour2-design
+cd jour2-design
+npm start
+a
+
+draw.io 
