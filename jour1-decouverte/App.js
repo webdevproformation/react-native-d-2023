@@ -9,6 +9,7 @@ import Sixieme from "./composants/Sixieme"
 import Septieme from './composants/Septieme';
 import Huitieme from './composants/Huitieme';
 import Neuvieme from './composants/Neuvieme';
+import Dixieme from './composants/Dixieme';
 
 export default function App() {
   // code
@@ -19,6 +20,7 @@ export default function App() {
   // bon appétit 13h40 !!! 
   return (
     <View style={styles.container}>
+      <Dixieme />
       <Neuvieme />
       <Huitieme />
       <Septieme />
