@@ -1,0 +1,5 @@
+cas pratique créer un nouveau composant 
+Design2 
+qui va remplacer le Design1
+et qui respecte à 
+cette mise en page 

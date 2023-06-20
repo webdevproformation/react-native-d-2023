@@ -2,6 +2,7 @@ import { StyleSheet, Text, View , StatusBar } from 'react-native'
 import React from 'react'
 
 export default function Design1() {
+    
   return (
     <View style={styles.container}>
       <View style={styles.header}>
