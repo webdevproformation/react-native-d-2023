@@ -81,3 +81,28 @@ afficher dans la vue du composant le jsx suivant :
         <Text> PS5 à 200 € en non disponible </Text>
         <Text> NintendoDS à 800 € en Vente </Text>
 </View>
+
+-------------------
+
+Attention à l'ordre des actions : 
+
+il faut d'abord lancer l'émulateur (dans Android Studio)
+et après 
+lancer la commande npm start  (dans Visual Studio Code)
+
+{ [].map(function(){
+        return (
+                <Text></Text>
+        )
+}) }
+
+{ [].map(function(){
+        return <Text>
+        
+        </Text>
+}) }
+
+{ [].map(function(){
+        return ;
+        <Text></Text>
+}) }
