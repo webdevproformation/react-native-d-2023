@@ -1,0 +1,84 @@
+http://sharemycode.fr/jqg
+
+
+notes de cours : 
+https://github.com/webdevproformation/react-native-d-2023
+
+
+support de cours 
+https://formation.webdevpro.net/react-native (directement dans la barre d'adresse  pas dans Google)
+login : react-native
+password : facebook
+
+Qu'est ce que l'on a vu ?
+
+Installation :
+
+nodejs (version 12 minimum)
+Android Studio (partie Emulateur)
+        => smartphone 
+        => Système d'exploitation 
+
+Créer un projet 
+npx create-expo-app --template
+npm start  =>  expo start
+
+expo => traduire javascript => Langage Machine pour l'émulateur
+
+serveur 
+code source ==========> exp://172.16.10.96:19000
+
+Dans l'émulateur / il y a la version client de expo  => port 19000
+logiciel qui s'est installé 
+
+npm start 
+
+---------------------
+
+Créer des composants 
+
+- créer un fichier PremièreLettreEnMajuscule.jsx
+
+import { View , Text } from "react-native"
+
+export default function PremièreLettreEnMajuscule(){
+        const a = "bonjour";
+        const b = [1,2,3]
+        const c = false ;
+        return (
+                <View>
+                  <Text>{ a }</Text>
+                  {/** interpolation *>}
+                  { b.map(function(item, key){
+                        return <Text key={key}>{ item }</Text>
+                  }) }
+                  {/** opérateur ternaire */}
+                  { c ? "c'est vrai" : "c'est faux }
+                  {/** opérateur boolean &&  */}
+                  {c && "c'est vrai" }
+                </View>
+        )
+}
+
+//  on va dans le fichier App.js 
+
+import PremièreLettreEnMajuscule from "./composants/PremièreLettreEnMajuscule"
+
+<PremièreLettreEnMajuscule /> => exécution du composant 
+PremièreLettreEnMajuscule()
+
+// relancer le projet d'hier 
+// créer un nouveau composant Dixieme
+// ce composant contient des données dans la variable informations
+[
+        {id : 1 , nom : "PS4" , prix : 500 , enStock : true },
+        {id : 2 , nom : "PS5" , prix : 200 , enStock : false },
+        {id : 3 , nom : "NintendoDS" , prix : 800 , enStock : true },
+]
+
+afficher dans la vue du composant le jsx suivant :
+<View>
+        <Text> PS4 à 500 € en Vente </Text>
+        <Text> PS5 à 200 € en non disponible </Text>
+        <Text> NintendoDS à 800 € en Vente </Text>
+</View>
