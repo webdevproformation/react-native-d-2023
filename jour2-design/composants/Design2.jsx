@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , Dimensions } from 'react-native'
+import { StyleSheet, Text, View , Dimensions , Button } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'react-native'
 
@@ -12,12 +12,22 @@ export default function Design2() {
         <View style={styles.logo}/>
         <View style={styles.btn}/>
       </View>
-      <View style={styles.banniere}></View>
+      <View style={styles.banniere}>
+            <Button title={"action"} onPress={function(){}} />
+      </View>
       <View style={styles.boutons}>
-        <View style={styles.btn1}/>
-        <View style={styles.btn1}/>
-        <View style={styles.btn1}/>
-        <View style={styles.btn1}/>
+        <View style={styles.btn1}>
+            <Text style={styles.text}>Accueil</Text>
+        </View>
+        <View style={styles.btn1}>
+            <Text  style={styles.text}>Connexion</Text>
+        </View>
+        <View style={styles.btn1}>
+            <Text  style={styles.text}>Profil</Text>
+        </View>
+        <View style={styles.btn1}>
+            <Text  style={styles.text}>Vidéo</Text>
+        </View>
       </View>
     </View>
   )
@@ -49,7 +59,9 @@ const styles = StyleSheet.create({
         flex : 5 , 
         marginBottom :20,
         backgroundColor : "pink",
-        marginHorizontal :10
+        marginHorizontal :10,
+        justifyContent: "center",
+        alignItems : "center"
     },
     boutons: {
         flex : 3 , 
@@ -64,6 +76,17 @@ const styles = StyleSheet.create({
         width : (Dimensions.get("window").width - 30) / 2,
         backgroundColor : "green" ,
         height : "49%" ,
-        marginBottom : 5
+        marginBottom : 5,
+        justifyContent: "center",
+        alignItems : "center"
+    },
+    text :{
+        fontSize : 25,
+        color : "white",
+        fontFamily : "serif",
+        fontWeight : 900 ,
+        textDecorationColor : "pink",
+        textDecorationStyle : "solid",
+        textDecorationLine : "underline"
     }
 })

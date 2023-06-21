@@ -1,0 +1,49 @@
+mise en page dans React Native
+
+=> flexbox dans React Native (qui est différent de celui utilisé dans html)
+
+=> les différences :
+
+<header> <footer> <main> .....
+<View> 
+
+html => display flex => mettre élements enfant sur la même ligne 
+React native> mettre Composant enfant en colonne 
+
+en html il FAUT écrire display flex 
+en React native si vous utilisez View automatiquement la règle est ajoutée 
+
+si flexDirection = "row"
+justifyContent => gestion de l'espace horizontale
+alignItems => alignement vertical
+
+si flexDirection : "column"
+justifyContent =>  alignement vertical
+alignItems => gestion de l'espace horizontale
+
+
+flex => utilise directement sur les éléments enfant 
+ET permet definir une largeur si on est flexDirection = "row"
+ET de définir une hauteur si on est en flexDirection : "column"
+-------------------
+
+import { StatusBar } from "react-native"
+
+StatusBar.currentHeight => hauteur de la barre de status 
+
+import { Dimension } from "react-native"
+Dimension.get("window").width => largeur écran
+Dimension.get("window").height => hauteur écran
+
+=> détection de l'orientation de l'écran 
+https://docs.expo.dev/versions/latest/sdk/screen-orientation/
+
+npx expo install expo-screen-orientation
+
+-------------------
+
+css de React et css de html 
+il n'y a pas d'héritage notamment mise en forme de texte 
+
+
+
