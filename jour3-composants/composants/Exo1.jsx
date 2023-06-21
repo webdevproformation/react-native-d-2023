@@ -5,7 +5,7 @@ export default function Exo1() {
   return (
     <View>
         <View style={styles.ligne}>
-            <Image source={{ uri : "https://via.placeholder.com/300x100" , width: 300 , height : 100 }} style={styles.img1}/>
+            <Image source={require("../assets/images/paysage.jpg")} style={styles.img3}/>
             <Image source={{ uri : "https://via.placeholder.com/300x100" , width: 300 , height : 100 }} style={styles.img2}/>
         </View>
         <View style={styles.ligne}>
@@ -15,17 +15,9 @@ export default function Exo1() {
     </View>
   )
 }
-
 const styles = StyleSheet.create({
-    ligne : {
-        flexDirection : "row",
-        marginBottom : 10
-    },
-    img1 :{
-        flex : 1,
-        marginRight :10
-    },
-    img2 :{
-        flex : 1
-    }
+    ligne : { flexDirection : "row", marginBottom : 10 },
+    img1 : { flex : 1, marginRight :10 },
+    img2 : { flex : 1 },
+    img3 : {width : '49%' , height : 100 , marginRight :10}
 })
