@@ -1,15 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View , StatusBar as S } from 'react-native';
+import { StyleSheet, Text, View , StatusBar as S , ScrollView } from 'react-native';
 import LeText from './composants/LeText';
 import Separateur from './composants/Separateur';
 import LesImages from './composants/LesImages';
+import Exo1 from './composants/Exo1';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <LeText />
-      <Separateur />
-      <LesImages />
+      <ScrollView>
+        <LeText />
+        <Separateur />
+        <LesImages />
+        <Separateur />
+        <Exo1 />
+      </ScrollView>
       <StatusBar style="auto" />
     </View>
   );
