@@ -1,0 +1,4 @@
+créer un nouveau composant qui s'appelle Exo1 
+
+ce composant affiche 4 images 
+sousn forme de damier =====================>
