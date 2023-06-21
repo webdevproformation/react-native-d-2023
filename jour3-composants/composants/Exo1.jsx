@@ -21,3 +21,5 @@ const styles = StyleSheet.create({
     img2 : { flex : 1 },
     img3 : {width : '49%' , height : 100 , marginRight :10}
 })
+
+// rdv 13h45 bon appétit !! 

@@ -4,6 +4,7 @@ import LeText from './composants/LeText';
 import Separateur from './composants/Separateur';
 import LesImages from './composants/LesImages';
 import Exo1 from './composants/Exo1';
+import Liste from './composants/Liste';
 
 export default function App() {
   return (
@@ -14,7 +15,10 @@ export default function App() {
         <LesImages />
         <Separateur />
         <Exo1 />
+        <Separateur />
+        
       </ScrollView>
+      <Liste />
       <StatusBar style="auto" />
     </View>
   );

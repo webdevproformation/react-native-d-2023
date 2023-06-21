@@ -1,0 +1,32 @@
+Lors que l'on est en html et que l'on veut présenter une liste 
+
+
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+<ol>
+    <li></li>
+    <li></li>
+</ol>
+
+Dans React native => <FlatList />
+
+créer un nouveau composant Exo2
+dans ce composant il y a une variable qui s'appelle articles contenant les valeurs suivantes :
+[
+    { id : 1 , titre : "article 1" , contenu : "lorem" , auteur : "Alain" },
+    { id : 2 , titre : "article 2" , contenu : "lorem" , auteur : "Alain" },
+    { id : 3 , titre : "article 3" , contenu : "lorem" , auteur : "Céline" },
+    { id : 4 , titre : "article 4" , contenu : "lorem" , auteur : "Céline" },
+] 
+
+afficher dans la vue du composant une FlatList ayant l'aspect suivant pour chaque item  de la liste et 
+la liste sera présenté sous forme de grille de 2 colonnes 
+
+<View>
+    <Text>titre</Text>
+    <Text>contenu</Text>
+    <Text>auteur</Text>
+    <Text><Button lire la suite ... /></Text>
+</View>
