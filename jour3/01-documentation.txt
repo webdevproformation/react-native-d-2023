@@ -1,0 +1,26 @@
+React native dispose d'un site internet bien documenté
+
+=> https://reactnative.dev/
+
+=> Development > Components > View 
+
+
+<View></View>
+<View 
+    style={} 
+    id={} 
+    focusable={false}
+    onLayout={function(){}} // vraiment un écouteur d'évènement 
+    ></View>
+
+=> https://www.youtube.com/@notjustdev
+
+<Text style={} onPress={} ></Text>
+
+<Button onPress={} title={} color={}/>
+
+Store sur votre smartphone =>  expo go
+
+https://play.google.com/store/apps/details?id=host.exp.exponent
+
+

@@ -1,0 +1,13 @@
+je vous propose de présenter les principaux composants de React Native 
+
+je vous propose de créer un nouveau projet 
+jour3-composants
+
+Au préalable avoir démarrer votre emulateur 
+
+cd ..
+npx create-expo-app --template
+Blank
+jour3-composants
+cd jour3-composants
+npm start 

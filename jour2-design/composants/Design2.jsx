@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
         padding : 10
     }, 
     btn1 : {
-        /* width : "49%", */
-        width : (Dimensions.get("window").width - 30) / 2,
+         width : "49%", 
+       /*  width : (Dimensions.get("window").width - 30) / 2, */
         backgroundColor : "green" ,
         height : "49%" ,
         marginBottom : 5,
