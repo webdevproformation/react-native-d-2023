@@ -5,6 +5,8 @@ import Separateur from './composants/Separateur';
 import LesImages from './composants/LesImages';
 import Exo1 from './composants/Exo1';
 import Liste from './composants/Liste';
+import Exo2 from './composants/Exo2';
+import Formulaire from './composants/Formulaire';
 
 export default function App() {
   return (
@@ -16,9 +18,10 @@ export default function App() {
         <Separateur />
         <Exo1 />
         <Separateur />
-        
+        <Formulaire />
       </ScrollView>
       <Liste />
+      <Exo2 />
       <StatusBar style="auto" />
     </View>
   );

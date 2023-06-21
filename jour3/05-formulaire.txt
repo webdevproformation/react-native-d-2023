@@ -1,0 +1,60 @@
+en html 
+
+<form>
+    <input type="text" />
+    <textarea></textarea>
+    <input type="checkbox" />
+    <input type="file" />
+
+    <button></button>
+    <input type="submit">
+</form>
+
+https://www.w3schools.com/tags/tag_input.asp
+
+en React Native il n'y a pas de balise <form>
+
+<input type="text" />
+<textarea></textarea> 
+<Input />
+
+<input type="checkbox" />
+<Switch />
+
+bouton 
+<Button /> => bouton qui ne peut êtr uniquement mis en forme que sur sa couleur de fond 
+
+si vous voulez créer un bouton avec une mise en forme spéciale 
+
+<Touchable...>
+    <Text></Text>
+</Touchable...>
+
+<Touchable...>
+    <Image source={{}} />
+</Touchable...>
+
+<Pressable>
+    <Text></Text>
+</Pressable>
+
+// npm i react-native-vector-icons
+// npm start 
+
+npmjs.com
+
+https://www.npmjs.com/package/react-native-vector-icons
+
+
+créer un nouveau composant Exo3 
+
+ce composant contient un formulaire avec les 3 champs suivantes 
+
+nom 
+adresse (champ multilignes)
+email 
+
++ un bouton personnalisé 
+bouton de type TouchableOpacity 
+qui contient une image de la librairie "MaterialCommunityIcons" message-alert
+
