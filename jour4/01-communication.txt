@@ -84,3 +84,9 @@ créer un composant => Compteur
 
 <Text>10</Text>
 <bouton qui contient le texte "augmenter de + 1" :>
+
+
+Quelle technologique est utilisée pour les sites internet ????
+
+=> statistiques => https://w3techs.com/
+=> technologie > Content Management 
