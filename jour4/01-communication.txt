@@ -1,0 +1,86 @@
+aujourd'hui on s"intéresse à comment React Native 
+
+gère les données DANS les composants 
+entre les composants comment partager des informations ENTRE les composants 
+
+=> state => donnée qui sont locales au composant 
+=> disponible UNIQUEMENT DANS le composant 
+
+=> pour créer un state il faut utiliser une fonction qui vient de la librairie React => useState()
+
+
+const a = 10 ; // variable javascript 
+
+const [a] = useState(10) ; // la variable a est un state 
+
+// a est disponible uniquement DANS le composant 
+// et si a est modifié alors => réexcuté le composant 
+// qui contient le state a 
+// si le state a est modifié => rééexcution du composant ET toute la partie vue du composant est re rendue 
+
+useState() => fonction que l'on va importer depuis react 
+
+=> use.... => hook (crochet) => fonctions primitives de React 
+permet d'ajouter des comportements via des traitements profonds de react 
+
+funtion calcul(){
+
+    .....
+    .....
+    .........
+    .....
+    .....
+    .....
+}
+
+
+const [ state , setState ] = useState(10)
+const [ state , setState ] = useState("texte")
+const [ state , setState ] = useState(true)
+const [ state , setState ] = useState(function(){ return 10 })
+const [ state , setState ] = useState([])
+const [ state , setState ] = useState({})
+const [ state , setState ] = useState([{},{}])
+
+useState() peut prendre n'importe quelle valeur dans ses ()
+et useState() retourne un tableau avec 2 variables 
+1ère variable => state 
+2ème variable => fonction qui permet de modifier la valeur du  state (la ère variable )
+
+
+let [ b , setB ] = useState(30)
+
+b = 40 ; // erreur 
+
+setB(40) // OK => je modifie la valeur de b à 40 
+// rééexcutée le composant qui contient le state 
+// re render la vue du composant avec b qui aura la valeur de 40 
+
+document.querySelector("p")
+
+
+cd ..
+npx create-expo-app --template
+jour4-communication
+cd jour4-communication
+npm start
+
+// attention dans le projet que l'on vient de créer 
+// il n' y a pas la librairie react-native-vector-icons 
+// elle uniquement disponible dans le projet d'hier 
+jour3-composants 
+// Exo1 ... Formulaire ... => disponible uniquement dans le projet hier 
+
+je dois réinstallaer react-native-vector-icons dans le projet du jour 
+
+cd jour4-communication
+npm i  react-native-vector-icons
+
+hook 
+
+Cas pratique 
+
+créer un composant => Compteur 
+
+<Text>10</Text>
+<bouton qui contient le texte "augmenter de + 1" :>
