@@ -95,7 +95,7 @@ créer un nouveau composant Exo1
 
 dans ce composant vous avez plusieurs state 
 prix  = 200
-couleur = "blue"
+couleur = "blue"     &&
 
 dans la vue
 text avec le prix affiché 

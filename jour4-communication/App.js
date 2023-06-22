@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , StatusBar as S } from 'react-native';
 import Compteur from './composants/Compteur';
+import Separateur from './composants/Separateur';
+import Exo1 from './composants/Exo1';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Compteur />
+      <Separateur />
+      <Exo1 />
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +18,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff' ,
+    marginTop : S.currentHeight
   },
 });
