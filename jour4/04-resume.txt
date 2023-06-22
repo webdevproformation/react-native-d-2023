@@ -53,3 +53,8 @@ créer deux composants
                 <Text>nom </Text>
                 <Text>note</Text> si la note >= 10 fond vert si la note < 10 fond rouge 
             </View>
+
+
+Etudiants  note / nom 
+    Notes
+        return note / nom 

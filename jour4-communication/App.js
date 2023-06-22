@@ -6,6 +6,8 @@ import Exo1 from './composants/Exo1';
 import Article from './composants/Article';
 import Exo2 from './composants/Exo2';
 import Valeur from './composants/Valeur';
+import Etudiants from './composants/Etudiants';
+import A from './composants/A';
 
 export default function App() {
   return (
@@ -20,6 +22,10 @@ export default function App() {
         <Exo2 />
         <Separateur />
         <Valeur />
+        <Separateur />
+        <Etudiants />
+        <Separateur />
+        <A />
       </ScrollView>
       <StatusBar style="auto" />
     </View>
