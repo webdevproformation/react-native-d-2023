@@ -3,6 +3,7 @@ import { StyleSheet, Text, View , StatusBar as S } from 'react-native';
 import Compteur from './composants/Compteur';
 import Separateur from './composants/Separateur';
 import Exo1 from './composants/Exo1';
+import Article from './composants/Article';
 
 export default function App() {
   return (
@@ -10,6 +11,8 @@ export default function App() {
       <Compteur />
       <Separateur />
       <Exo1 />
+      <Separateur />
+      <Article />
       <StatusBar style="auto" />
     </View>
   );

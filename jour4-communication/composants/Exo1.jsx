@@ -5,10 +5,14 @@ export default function Exo1() {
     const [prix, setPrix] = useState(200);
     // const [couleur , setCouleur] = useState("blue")
     function augmenterPlus10(){
-        setPrix(prix + 10)
+        setPrix(prix + 10) // les fonctions en 2ème paramètre du useState() 
+                           // si on a besoin d'attendre que le state soit modifié useEffect()
+                           // lag 
+        // if(prix > 250 )  setCouleur("red")
     }
     function diminuerMoins10(){
         setPrix(prix - 10)
+        // if(prix <= 250 )  setCouleur("blue")
     }
   return (
     <View>
