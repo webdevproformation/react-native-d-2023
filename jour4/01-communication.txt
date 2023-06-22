@@ -90,3 +90,21 @@ Quelle technologique est utilisée pour les sites internet ????
 
 => statistiques => https://w3techs.com/
 => technologie > Content Management 
+
+créer un nouveau composant Exo1 
+
+dans ce composant vous avez plusieurs state 
+prix  = 200
+couleur = "blue"
+
+dans la vue
+text avec le prix affiché 
+deux bouton" 
+   "augmenter de + 10"
+   "diminuer de - 10"
+
+si vous cliquez sur le bouton  => "augmenter de + 10" augmenter le prix de + 10 ET si la valeur de prix > 250
+                                => changer la couleur du texte à red 
+
+si vous cliquez sur le bouton  => "augmenter de - 10" diminuer le prix de - 10 ET si la valeur de prix <= 250
+                               > changer la couleur du texte à blue 
