@@ -1,0 +1,19 @@
+Créer un nouveau composant qui s'appelle Exo2 
+cet objet contient un state qui s'appelle formation qui est un objet 
+qui possède les valeurs suivantes 
+{
+    nom : "CDA",
+    duree : 4 ,
+    prix : 200
+}
+dans la vue du composant 
+afficher 
+    le nom
+    la duree
+    le prix 
+ajouter deux boutons 
+  augmenter la duree + 2 
+  diminuer le prix  -20
+
+  si vous cliquez sur le 1er bouton augmenter la durée de + 2
+  si vous cliquez sur le 2eme bouton diminuer le prix de -20
