@@ -21,3 +21,9 @@ export default function Exo1() {
 }
 
 const styles = StyleSheet.create({})
+
+// function a(){}
+// const a = function(){}
+// document.querySelector("p").addEventListener("click", function(){})
+// document.querySelector("p").addEventListener("click", a)
+// document.querySelector("p").addEventListener("click", a())
