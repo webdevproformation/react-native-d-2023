@@ -7,6 +7,7 @@ import Exo1 from './composants/Exo1';
 import Liste from './composants/Liste';
 import Exo2 from './composants/Exo2';
 import Formulaire from './composants/Formulaire';
+import Exo3 from './composants/Exo3';
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
         <Exo1 />
         <Separateur />
         <Formulaire />
+        <Separateur />
+        <Exo3 />
       </ScrollView>
       <Liste />
       <Exo2 />
