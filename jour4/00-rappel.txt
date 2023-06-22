@@ -1,0 +1,35 @@
+Composants 
+
+<Text></Text> => <h1> <h2> <p> <quote> ...
+
+<View></View> / <View/> => <div> <header> <nav> <footer> <section> 
+
+<Image source={require("...")} />
+<Image source={{ uri : "..." , width :"" , height:"" }} 
+       blurRadius={0 - 20} fadeDuration={0 - 20}/>
+
+<ImageBackground source={require("...")} >
+</ImageBackground>
+
+<FlatList data={} renderItem={} keyExtractor={} /> 
+<ul> et <li>
+
+<ScrollView> </ScrollView> => permet d'ajouter une barre de défilement 
+
+<TextInput  placeholder={}  /> => <input type="text" >
+<TextInput  placeholder={} numberOfLine={} multiligne={true} /> => <textarea></textarea>
+<Switch value={true} />
+
+<Button title={} onPress={} color={"red"} />
+
+<TouchableOpacity>
+</TouchableOpacity>
+
+télécharger une librairie react-native-vector-icons => 20000 icones vectorisées
+
+import Librairie from "react-native-vector-icons/Librairie"
+<Librairie name={} size={} color={} />
+
+=> <a href=""></a> (la semaine prochaine lorsque l'on va parler de navigation)
+
+=> start émulateur 
