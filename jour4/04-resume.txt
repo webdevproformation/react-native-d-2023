@@ -1,0 +1,55 @@
+plein de composant 
+
+1 seul composant 
+=> useState() => stockée des données dédiées au composant 
+              => affichés Dans la vue (return) du composant 
+
+
+=> const [nb , setNb] = useState(0)
+
+setNb(nb + 1)
+
+=> const [etudiant, setEtudiant ] = useState({nom : "Alain", age : 22})
+
+const cloneEtudiant = {...etudiant}
+cloneEtudiant.age ++ 
+setEtudiant(cloneEtudiant)
+
+=> Maintenant on va faire communiquer deux composants 
+
+function ComposantParent(){
+
+    return <ComposantEnfant />
+}
+    
+function ComposantEnfant (){
+
+}
+
+App 
+    => Valeur  xxxxxxxxx => useState(0)
+        =>  Btn 
+
+Cas pratique 
+
+créer deux composants 
+    Etudiants 
+        créer un state qui s'appelle etudiants qui contient les valeurs suivantes 
+        [
+            {id : 1 , nom : "Alain" , note : 10},
+            {id : 2 , nom : "Benois" , note : 8},
+            {id : 3 , nom : "Céline" , note : 17},
+            {id : 4 , nom : "Damien" , note : 15},
+        ]
+
+        exécuter autant de fois le composant <Notes /> qu'il y a de valeurs dans etudiants 
+        envoyer chaque information vers le composant <Notes />
+
+    Notes 
+        récupérer les valeurs envoyées depuis le parent 
+
+        afficher 
+            <View>
+                <Text>nom </Text>
+                <Text>note</Text> si la note >= 10 fond vert si la note < 10 fond rouge 
+            </View>

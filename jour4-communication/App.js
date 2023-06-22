@@ -5,6 +5,7 @@ import Separateur from './composants/Separateur';
 import Exo1 from './composants/Exo1';
 import Article from './composants/Article';
 import Exo2 from './composants/Exo2';
+import Valeur from './composants/Valeur';
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
         <Article />
         <Separateur />
         <Exo2 />
+        <Separateur />
+        <Valeur />
       </ScrollView>
       <StatusBar style="auto" />
     </View>
