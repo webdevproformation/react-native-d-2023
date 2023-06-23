@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View , Image } from 'react-native'
+import { StyleSheet, Text, View , ActivityIndicator } from 'react-native'
 import React , {useState , useEffect} from 'react'
+import Personnage from './Personnage'
 export default function ApiGameOfThrone() {
     const [personnage, setPersonnage] = useState({}) // objet vide 
     useEffect( function(){
@@ -7,14 +8,24 @@ export default function ApiGameOfThrone() {
         // mettre la requête ajax dans un useEffect( , [])
         fetch("https://thronesapi.com/api/v2/Characters/1")
             .then(function(reponse){ return reponse.json()})
-            .then(function(data){ setPersonnage(data)  })
+            .then(function(data){ 
+                setTimeout( function(){ setPersonnage(data) } , 2000)
+              })
        /*  axios.get("https://thronesapi.com/api/v2/Characters/1")
             .then(function(data){ setPersonnage(data) }) */
     }, [])
   return (
     <View>
-      <Text>ApiGameOfThrone</Text>
-      <Text>{JSON.stringify(personnage)}</Text>
+      <Text>ApiGameOfThrone</Text> 
+      <View style={{ alignItems: "center" }}>
+        { Object.keys(personnage).length === 0 
+            ?
+            <ActivityIndicator size={'large'}/>
+            :
+            <Personnage information={personnage} />
+        }
+      </View>
+      
     </View>
   )
 }
