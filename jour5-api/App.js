@@ -1,15 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View ,StatusBar as S } from 'react-native';
+import { StyleSheet, View ,StatusBar as S } from 'react-native';
+import CycleVie from './composants/CycleVie';
+import ApiGameOfThrone from './composants/ApiGameOfThrone';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CycleVie />
+      <ApiGameOfThrone />
       <StatusBar style="auto" />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
