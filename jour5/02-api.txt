@@ -1,0 +1,50 @@
+créé des applications monopage 
+plein de composants 
+faire communiquer les uns avec les autres
+state 
+mis en page 
+
+=> appeler des API 
+
+API => Application Program Interface 
+=> on peut faire communiquer deux logiciels autonomes 
+
+React Native  ------ API ------ Base de Données 
+js                                  PHP / Ruby / Java / NodeJS 
+                                    Firebase
+
+app client afficher des informations 
+
+app serveur stocker des informations 
+
+API => faire une demande / requête
+    => une fois que la demande est traitée => json 
+
+Architecture logicielle n Client - 1 Server 
+
+faire des demandes au niveau du client 
+=> axios => librairie qui permet de réaliser des requêtes http 
+=> fetch => équivalent de axios directement intégré dans le langage javascript 
+
+console.log() => connu du langage javascript
+fetch() => connu du langage javascript 
+
+axios.get() => ajouter 
+
+API 
+    => demander récupérer des données GET axios.get()
+    => ajouter informations POST axios.post()
+    => mis à jour d'informations existantes PUT axios.put()
+    => supprimer des informations DELETE axios.delete()
+
+
+Ctrl + C 
+cd ..
+npx create-expo-app --template
+Blank
+jour5-api 
+cd jour5-api 
+il faut que l'émulateur soit démarré au préalable 
+npm start 
+a
+
