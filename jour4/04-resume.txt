@@ -58,3 +58,7 @@ créer deux composants
 Etudiants  note / nom 
     Notes
         return note / nom 
+
+exo exemple
+
+    

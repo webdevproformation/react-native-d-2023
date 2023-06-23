@@ -1,0 +1,78 @@
+
+useState() => hook => crochet 
+
+=> s'accrocher / utiliser des comportements profonds de React 
+
+=> useState() permet d'exécuter le composant quand un state est modifié 
+
+function Composant(){
+    const [a, setA] = useState(0)
+    setA(10) // exécuter le composant
+}
+
+<Composant /> // exécuter le composant
+
+// valeur simple / primitive
+const [a, setA] = useState(0) // number
+const [a, setA] = useState("texte") // string
+const [a, setA] = useState(true) // boolean
+
+setA(a + 1)
+setA("texte modifié")
+setA(false)
+
+// valeurs complexes 
+const [a, setA] = useState([1,2,3]) // array
+
+const cloneA = [...a]
+cloneA[0] = 10 
+setA(cloneA)
+
+const [a, setA] = useState({largeur : 10}) // object 
+
+const cloneA = {...a} 
+cloneA.largeur = 60 
+setA(cloneA)
+
+---------------------
+
+faire communiquer des composants qui ont une relation 
+Parent / Enfant 
+
+function Parent(){
+    // ici 
+    return <Enfant largeur={10} etat={true} liste={[1,2,4]} calcul={function(a, b){}} />
+}
+// props => libre d'en ajouté autant que nécessaire
+
+function Enfant({largeur , etat , liste , calcul}){
+    return <View>
+        <Text>{largeur}</Text>
+        {liste.map(function(item, key){
+            return <Text key={key}>{item}</Text>
+        })}
+        <Button title={'action'} onPress={function(){
+            calcul(2, 3)
+        }} />
+    </View>
+}
+
+
+function calcul (a, b){
+    // .....
+}
+
+calcul(2,3)
+
+cd jour4-communication
+npm start
+
+Post 
+    titre 
+    image 
+
+    Liste des commentaires 
+
+    Commentaire 
+        TextInput 
+        Button 
