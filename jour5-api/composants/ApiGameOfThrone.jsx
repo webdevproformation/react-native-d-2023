@@ -25,9 +25,10 @@ export default function ApiGameOfThrone() {
             <Personnage information={personnage} />
         }
       </View>
-      
     </View>
   )
 }
 
 const styles = StyleSheet.create({})
+
+

@@ -1,0 +1,18 @@
+créer Menu.jsx 
+
+export default function Menu(){
+    return <Menu />
+}
+
+
+créer Article.jsx 
+
+export default function Article(){
+    return <Commentaire />
+}
+
+créer Commentaire.jsx 
+
+export default function Commentaire(){
+    return <Article />
+}

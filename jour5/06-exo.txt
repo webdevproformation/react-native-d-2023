@@ -1,0 +1,16 @@
+// https://thewalkingdead-api.onrender.com/api/characters?id=1
+
+// cas pratique dans le projet jour5-api 
+// créer un nouveau composant Exo1 
+// import depuis la librairie react useEffect et useState 
+
+// créer un state qui s'appelle user qui par défaut = objet vide 
+// effecter un requête ajax au moment où le composant est monté use Effect() sur 
+// l'api suivante : https://jsonplaceholder.typicode.com/users/1
+
+// afficher dans la vue du composant Exo1 
+
+nom complet 
+email 
+téléphone
+adresse : rue code_postal ville 
