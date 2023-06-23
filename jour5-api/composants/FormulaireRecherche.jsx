@@ -1,11 +1,17 @@
 import { StyleSheet,  View, TextInput, Button } from 'react-native'
 import React from 'react'
 
-export default function FormulaireRecherche() {
+export default function FormulaireRecherche({setRecherche, setUpdate , recherche}) {
   return (
     <View style={{ flexDirection : "row" , alignItems : "center"}}>
-      <TextInput placeholder={'saisir le nom d\'cocktail'} style={styles.input}/>
-      <Button title={'go'} onPress={function(){}} />
+      <TextInput placeholder={'saisir le nom d\'cocktail'} 
+        style={styles.input} 
+        value={recherche}
+        onChangeText={function(texteSaisi){ setRecherche(texteSaisi) }}
+        />
+      <Button title={'go'} onPress={function(){
+        setUpdate(function(update){ return !update})
+      }} />
     </View>
   )
 }

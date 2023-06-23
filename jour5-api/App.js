@@ -8,9 +8,9 @@ import Recherche from './composants/Recherche';
 export default function App() {
   return (
     <View style={styles.container}>
-      <CycleVie />
+      {/* <CycleVie />
       <ApiGameOfThrone />
-      <Exo1 />
+      <Exo1 /> */}
       <Recherche />
       <StatusBar style="auto" />
     </View>
