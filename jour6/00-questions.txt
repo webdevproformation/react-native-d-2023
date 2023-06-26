@@ -129,5 +129,12 @@ npm install @react-navigation/native-stack
 // icone en format vectoriel
 npm i react-native-vector-icons
 
-
 npm start 
+
+créer un dossier qui s'appelle screens dans le projet jour6-navigation 
+
+dans le dossier screens vous allez créer 3 composants :
+
+<Home /> => afficher le texte Home 
+<NousContacter /> => afficher le texte nous contacter 
+<Login />   => afficher le texte login 
