@@ -102,3 +102,6 @@ et l'ensemble des notes de cours
 => est disponible sur un github
 
 https://github.com/webdevproformation/react-native-d-2023
+
+je vais avancer avec le groupe
+=> pour la pause de 10h30 je vais voir avec Milad pour ton micro 
