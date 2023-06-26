@@ -68,3 +68,37 @@ https://reactnavigation.org/ > Docs > Navigators
 https://formation.webdevpro.net/react-native/
 login : react-native
 password : facebook
+
+
+npx create-expo-app --template 
+Blank 
+jour6-navigation 
+
+cd jour6-navigation
+
+// ......... il faut ajouter des commandes qui permettent d'ajouter 
+// ......... des composants en +
+
+npm start 
+
+
+il faut créer un router => tableau qui lier adresse => composant à afficher 
+
+[
+    "/" => <Home />,
+    "/nous-contacter" => <NousContacter />,
+    "/login" => <Login />,
+    "/admin" => "ce qu'il doit afficher",
+    "/admin/gestion-user" => "ce qu'il doit afficher",
+]
+
+=> support de cours : 
+
+https://formation.webdevpro.net/react-native/
+login : react-native
+password : facebook
+
+et l'ensemble des notes de cours 
+=> est disponible sur un github
+
+https://github.com/webdevproformation/react-native-d-2023
