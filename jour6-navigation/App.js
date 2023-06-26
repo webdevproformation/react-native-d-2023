@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import Home from "./screens/Home"
 import NousContacter from './screens/NousContacter'
 import Login from './screens/Login'
+import Exo1 from './screens/Exo1'
 
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
 
@@ -33,6 +34,12 @@ export default function App() {
             <Tab.Screen name={'login'} component={Login} options={{
                 tabBarIcon : function({ color, size }){
                     return <MaterialCommunityIcons name={'login'} size={size} color={color} />
+                }
+            }}/>
+            <Tab.Screen name={'exo1'} component={Exo1} options={{
+                headerShown : false , 
+                tabBarIcon : function({ color, size }){
+                    return <MaterialCommunityIcons name={'exit-run'} size={size} color={color} />
                 }
             }}/>
         </Tab.Navigator>    
