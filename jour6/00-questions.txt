@@ -138,3 +138,14 @@ dans le dossier screens vous allez créer 3 composants :
 <Home /> => afficher le texte Home 
 <NousContacter /> => afficher le texte nous contacter 
 <Login />   => afficher le texte login 
+
+-------------------
+
+cas pratique : créer un nouvel écran 
+MentionLegale
+
+dans ce composant vous allez afficher 2 paragraphes de lorem ipsum et ajouter une image de votre choix 
+
+cette page est accessible via l'adresse mention-legale (modifier le router)
+
+vous pouvez accéder à cette page en cliquant sur une bouton disponible dans la page Login 

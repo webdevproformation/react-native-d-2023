@@ -12,6 +12,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import Home from './screens/Home' ;
 import NousContacter from "./screens/NousContacter" ;
 import Login from "./screens/Login" ; 
+import MentionLegale from './screens/MentionLegale';
 // récupérer les différentes Pages 
 
 const Stack =  createNativeStackNavigator(); // qui permet de créer le router
@@ -25,6 +26,7 @@ export default function App() {
           <Stack.Screen name={'accueil'} component={Home} />
           <Stack.Screen name={'nous-contacter'} component={NousContacter}/>
           <Stack.Screen name={'login'} component={Login} />
+          <Stack.Screen name={'mention-legale'} component={MentionLegale} />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />
@@ -36,6 +38,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop : S.currentHeight
+    marginTop : S.currentHeight,
   },
 });
