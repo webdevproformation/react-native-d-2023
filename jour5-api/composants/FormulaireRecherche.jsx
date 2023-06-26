@@ -19,3 +19,5 @@ export default function FormulaireRecherche({setRecherche, setUpdate , recherche
 const styles = StyleSheet.create({
     input : { borderColor : "black" , flex : 1 , marginRight : 10 , borderWidth : 1 , padding : 5 }
 })
+
+// sharemycode.fr/m6r

@@ -1,0 +1,24 @@
+composant pour iframe youtube dans React native 
+
+=> https://github.com/LonelyCpp/react-native-youtube-iframe
+=> https://lonelycpp.github.io
+
+stripe 
+
+=> react native un composant 
+=> 3 parties 
+
+=> créer un compte (pour toi) sur le site stripe 
+=> clé API
+
+=> installé un composant dans React native 
+=> il va permettre d'afficher là où l'utilisateur
+va saisir son numéro de carte blue
+
+=> il faut un serveur (NodeJS / PHP / Python)
+
+lien entre React Native (terminal cb)
+
+et le compte 
+https://www.youtube.com/watch?v=TP4DsPmQB6s
+https://www.youtube.com/watch?v=50bIefoMo3c

@@ -11,7 +11,7 @@ export default function Resultat({cocktails}) {
             return <View style={{ flexDirection : "column", margin :3 }}>
                 <Image source={{ uri : item.strDrinkThumb }} style={styles.img} />
                 <Text style={{ fontSize : 16}}>{item.strDrink}</Text>
-                <Text numberOfLines={2} style={styles.text}>{item.strInstructions}</Text>
+                <Text numberOfLines={3} style={styles.text}>{item.strInstructions}</Text>
             </View>
          }}
          keyExtractor={function(item){ return item.idDrink}}
