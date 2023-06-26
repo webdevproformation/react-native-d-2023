@@ -13,6 +13,8 @@ import Home from './screens/Home' ;
 import NousContacter from "./screens/NousContacter" ;
 import Login from "./screens/Login" ; 
 import MentionLegale from './screens/MentionLegale';
+import Message from './screens/Message';
+import Resultat from './screens/Resultat';
 // récupérer les différentes Pages 
 
 const Stack =  createNativeStackNavigator(); // qui permet de créer le router
@@ -37,6 +39,8 @@ export default function App() {
           <Stack.Screen name={'mention-legale'} component={MentionLegale} options={{
             headerShown : false
           }} />
+          <Stack.Screen name={'message'} component={Message} />
+          <Stack.Screen name={'resultat'} component={Resultat} />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />

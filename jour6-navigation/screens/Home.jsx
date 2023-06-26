@@ -17,6 +17,11 @@ export default function Home( { navigation } ) {
          * c'est directement le composant <Button /> 
         **/}
       </View>
+      <View>
+      <Button title={'laisser un message'} onPress={function(){
+            navigation.navigate("message")
+        }} />
+      </View>
     </View>
   )
 }
