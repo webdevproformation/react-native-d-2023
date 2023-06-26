@@ -1,4 +1,4 @@
-composant pour iframe youtube dans React native 
+composant pour iframe youtube dans React native :
 
 => https://github.com/LonelyCpp/react-native-youtube-iframe
 => https://lonelycpp.github.io
@@ -22,3 +22,49 @@ lien entre React Native (terminal cb)
 et le compte 
 https://www.youtube.com/watch?v=TP4DsPmQB6s
 https://www.youtube.com/watch?v=50bIefoMo3c
+
+
+---------------------------------
+
+Firebase 
+
+
+=> tous les composants de base 
+<Text>
+<View> 
+<ScrollView> 
+.....
+
+html => balise importante <a href=""></a> => changer de page 
+
+https://reactnative.dev/
+
+=> pour mettre en place une navigation dans React Native c'est pas juste un composant 
+
+<Link></Link>
+
+=> la navigation n'est pas installée par défaut dans npx create-react-app 
+
+=> vous avez un site de référence pour la navigation sur React native 
+=> https://reactnavigation.org/
+
+=> sur ce site internet vous allez trouver toute la documentation sur le sujet 
+
+=> 3 types de navigation 
+
+=> Navigation Stack  => cliquez sur un bouton => page qui se pose au dessus du lien
+                     => ressemble beaucoup <a href=""></a>
+
+=> Navigation Onglet => barre de menu qui est située en bas de l'écran
+                     => cliquez et ça change la page 
+
+=> Navigation Drawer => en haut de l'écran vous avez un bouton qui ressemble un burger
+                     => lorsque vous cliquez sur le bouton => 
+                     => la barre de menu qui va apparaitre sur la gauche 
+
+https://reactnavigation.org/ > Docs > Navigators 
+
+=> dans le support  (chapitre 9)
+https://formation.webdevpro.net/react-native/
+login : react-native
+password : facebook
