@@ -22,11 +22,21 @@ export default function App() {
     <View style={styles.container}>
       <NavigationContainer>
         <Stack.Navigator>
-          {/** routes */}
-          <Stack.Screen name={'accueil'} component={Home} />
+          {/** routes 
+           * emojipedia
+           * https://emojipedia.org/soccer-ball/
+          */}
+          <Stack.Screen name={'accueil'} component={Home} options={{
+            headerTitle : "Bienvenue sur l'Accueil ⚽", 
+            headerStyle : {backgroundColor : "red"}, 
+            headerTintColor : "white",
+            headerTitleAlign : "center"
+          }} />
           <Stack.Screen name={'nous-contacter'} component={NousContacter}/>
           <Stack.Screen name={'login'} component={Login} />
-          <Stack.Screen name={'mention-legale'} component={MentionLegale} />
+          <Stack.Screen name={'mention-legale'} component={MentionLegale} options={{
+            headerShown : false
+          }} />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />

@@ -7,7 +7,7 @@ export default function Login({navigation}) {
       <Text>Login</Text>
       <Button title={'voir les mentions légales'} onPress={function(){
         navigation.navigate("mention-legale")
-      }} />
+      }} color={'green'}/>
     </View>
   )
 }

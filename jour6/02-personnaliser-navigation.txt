@@ -1,0 +1,1 @@
+https://reactnavigation.org/docs/native-stack-navigator
