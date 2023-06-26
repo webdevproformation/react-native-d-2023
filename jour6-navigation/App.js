@@ -1,10 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , StatusBar as S } from 'react-native';
+
+// ajouter la navigation par Pile (Stack Navigation)
+
+import { NavigationContainer } from "@react-navigation/native"
+// liaison entre les liens et => le Router 
+
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
+// quel type de navigation on veut utiliser 
+
+import Home from './screens/Home' ;
+import NousContacter from "./screens/NousContacter" ;
+import Login from "./screens/Login" ; 
+// récupérer les différentes Pages 
+
+const Stack =  createNativeStackNavigator(); // qui permet de créer le router
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <NavigationContainer>
+        <Stack.Navigator>
+          {/** routes */}
+          <Stack.Screen name={'accueil'} component={Home} />
+          <Stack.Screen name={'nous-contacter'} component={NousContacter}/>
+          <Stack.Screen name={'login'} component={Login} />
+        </Stack.Navigator>
+      </NavigationContainer>
       <StatusBar style="auto" />
     </View>
   );
@@ -14,7 +36,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop : S.currentHeight
   },
 });

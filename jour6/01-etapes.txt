@@ -30,7 +30,7 @@ Etape2 créer des pages
 => pour pouvoir distinguer les composants Page (screen)
 => pour pouvoir distinguer les composants partie d'une page (composants)
 
-Etape 3 ROUTER 
+Etape 3 ROUTER App.js 
 [
     adresse ==> <Home />
     adresse ==> <NousContacter />
