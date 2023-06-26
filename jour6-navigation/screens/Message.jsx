@@ -3,6 +3,7 @@ import React , {useState} from 'react'
 
 export default function Message({navigation}) {
     const [email , setEmail] = useState("")
+
   return (
     <View>
       <Text style={{ fontSize : 25 , marginBottom :10 }}>Message</Text>
@@ -12,7 +13,8 @@ export default function Message({navigation}) {
         onChangeText={function(textSaisie){ setEmail(textSaisie) }}
         value={email}/>
       <Button title={'envoyer'} onPress={ function(){
-        navigation.navigate( 'resultat' , { recherche : email })
+        navigation.navigate( 'resultat' , { recherche : email , prix : 200})
+        setEmail("")
       }} />
     </View>
   )

@@ -23,7 +23,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator >
           {/** routes 
            * emojipedia
            * https://emojipedia.org/soccer-ball/

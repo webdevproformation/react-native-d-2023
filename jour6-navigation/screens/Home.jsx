@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View , Button } from 'react-native'
+import { StyleSheet, Text, View , Button, TouchableWithoutFeedback } from 'react-native'
 import React from 'react'
+import Btn from '../composant/Btn'
 
 export default function Home( { navigation } ) {
   return (
@@ -21,6 +22,10 @@ export default function Home( { navigation } ) {
       <Button title={'laisser un message'} onPress={function(){
             navigation.navigate("message")
         }} />
+      </View>
+      <View>
+        <Btn navigation={navigation} style={{color: "blue"}} url={"login"} texte={'texte 1'}/>
+        <Btn navigation={navigation} style={{color: "green" , fontSize : 30}} url={"mention-legale"} texte={'btn 2'}/>
       </View>
     </View>
   )
