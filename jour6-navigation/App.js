@@ -33,7 +33,7 @@ export default function App() {
             headerTitleAlign : "center"
           }} />
           <Stack.Screen name={'nous-contacter'} component={NousContacter}/>
-          <Stack.Screen name={'login'} component={Login} />
+          <Stack.Screen name={'login'} component={Login} initialParams={{nom : "Alain"}} />
           <Stack.Screen name={'mention-legale'} component={MentionLegale} options={{
             headerShown : false
           }} />
