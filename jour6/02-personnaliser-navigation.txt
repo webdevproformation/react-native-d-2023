@@ -1,1 +1,11 @@
 https://reactnavigation.org/docs/native-stack-navigator
+
+créer le composant Message 
+
+ce composant affiche un champ input dans lequel l'utilisateur peut saisir son email 
+affiche un bouton pour valider le formulaire 
+
+ce composant est disponible à l'adresse suivante 
+message ===> Message
+
+vous pouvez accéder à cette page via un bouton disponible dans la page d'accueil 
