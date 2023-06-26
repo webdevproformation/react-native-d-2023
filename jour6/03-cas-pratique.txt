@@ -1,0 +1,15 @@
+créer un nouveau composant qui s'appelle Exo1 
+dans le dossier screen 
+
+dans ce composant composant vous allez afficher 
+image de votre choix 
+dans laquelle vous allez centrer un bouton sur lequel est écrit "action 1"
+
+cette image est suivie de 3 paragraphes 
+
+ajouter un nouveau lien dans la barre de menu en bas de l'écran 
+
+lorsque vous cliquez dessus => afficher le composant Exo1 
+
+ne pas afficher la barre de titre pour cette page 
+

@@ -1,57 +1,44 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View , StatusBar as S } from 'react-native';
-
-// ajouter la navigation par Pile (Stack Navigation)
-
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 import { NavigationContainer } from "@react-navigation/native"
-// liaison entre les liens et => le Router 
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
-// quel type de navigation on veut utiliser 
+import Home from "./screens/Home"
+import NousContacter from './screens/NousContacter'
+import Login from './screens/Login'
 
-import Home from './screens/Home' ;
-import NousContacter from "./screens/NousContacter" ;
-import Login from "./screens/Login" ; 
-import MentionLegale from './screens/MentionLegale';
-import Message from './screens/Message';
-import Resultat from './screens/Resultat';
-// récupérer les différentes Pages 
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
 
-const Stack =  createNativeStackNavigator(); // qui permet de créer le router
+const Tab = createBottomTabNavigator() ; // créer le Router 
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={{flex : 1}}>
       <NavigationContainer>
-        <Stack.Navigator >
-          {/** routes 
-           * emojipedia
-           * https://emojipedia.org/soccer-ball/
-          */}
-          <Stack.Screen name={'accueil'} component={Home} options={{
-            headerTitle : "Bienvenue sur l'Accueil ⚽", 
-            headerStyle : {backgroundColor : "red"}, 
-            headerTintColor : "white",
-            headerTitleAlign : "center"
-          }} />
-          <Stack.Screen name={'nous-contacter'} component={NousContacter}/>
-          <Stack.Screen name={'login'} component={Login} initialParams={{nom : "Alain"}} />
-          <Stack.Screen name={'mention-legale'} component={MentionLegale} options={{
-            headerShown : false
-          }} />
-          <Stack.Screen name={'message'} component={Message} />
-          <Stack.Screen name={'resultat'} component={Resultat} />
-        </Stack.Navigator>
+        <Tab.Navigator screenOptions={{ 
+            tabBarActiveTintColor : "red" , 
+            tabBarInactiveTintColor : "blue" }}>
+            <Tab.Screen name={'accueil'} component={Home} options={{
+                headerTitle : "Bienvenue",
+                headerTitleAlign : "center",
+                tabBarIcon: function({ color, size }){
+                    return <MaterialCommunityIcons name={'home'} size={size} color={color} />
+                }
+            }}/>
+            <Tab.Screen name={'nous-contacter'} component={NousContacter} options={{
+                tabBarIcon : function({ color, size }){
+                    return <MaterialCommunityIcons name={'contacts'} size={size} color={color} />
+                }
+            }}/>
+            <Tab.Screen name={'login'} component={Login} options={{
+                tabBarIcon : function({ color, size }){
+                    return <MaterialCommunityIcons name={'login'} size={size} color={color} />
+                }
+            }}/>
+        </Tab.Navigator>    
       </NavigationContainer>
-      <StatusBar style="auto" />
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    marginTop : S.currentHeight,
-  },
-});
+const styles = StyleSheet.create({})

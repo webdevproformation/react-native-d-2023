@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Home() {
+export default function NousContacter() {
   return (
     <View>
-      <Text>je suis le composant Home</Text>
+      <Text>NousContacter</Text>
     </View>
   )
 }
