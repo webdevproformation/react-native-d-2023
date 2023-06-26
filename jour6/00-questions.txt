@@ -117,6 +117,8 @@ cd jour6-navigation
 npm install @react-navigation/native
 
 // compatibilité avec expo 
+npm i -g expo-cli
+
 expo install react-native-screens react-native-safe-area-context
 
 // différent type de navigation
