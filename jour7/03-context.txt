@@ -1,0 +1,57 @@
+comment partager des informations entre 2 composants ???
+
+
+
+function Parent(){
+    function action ( p ){}
+    return <Enfant largeur={10} prix={20} unite={"cm"} action={action} />
+}
+
+function Enfant({ largeur, prix , unite , action }){
+
+    return <View>
+        <Text>{largeur} {prix} {unite}</Text>
+        <Button onPress={function(){
+            action("une valeur")
+        }}
+    </View>
+}
+
+si j'ai besoin de partager des informations entre deux composants qui ne sont pas Parent / ENfant 
+
+=> petit fils / grand oncle 
+=> arrière grand père / cousin 
+
+App 
+    Menu    => changer le texte dans le menu => connexion / votre profil 
+        Accueil
+        Page 
+            Formulaire => je m'identifie
+
+comment faire pour partager des infos entre Formulaire et Menu ???
+
+=> context
+    => une sorte de composant qui est séparée de tous les autres composants 
+    => rôle de ce composant est le suivant => stocker des données ET de les partager à tous les composants 
+    => déjà installé dans React  (pas besoin de faire npm i )
+    => state global ( ressemble au concept de $_SESSION en PHP  )
+
+=> Redux 
+    => store (la terminologie à utiliser sur  state global) 
+
+
+je vous propose de créer un nouveau projet 
+
+
+cd ..
+npx create-expo-app --template
+Blank
+jour7-context 
+cd jour7-context 
+
+npm install @react-navigation/native
+expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/native-stack
+npm i react-native-vector-icons
+
