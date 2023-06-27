@@ -13,3 +13,18 @@ j'ai une question avec les Stack comment on choisie la page par défaut ?
         <Stack.Screen name={'connexion'} component={Login} /> 
         <Stack.Screen name={'mot-de-passe-oublie'} component={MotPassOublie} />
     </Stack.Navigator>
+
+créer trois composants (screen) => Home /
+                                    =>contient le texte "Bienvenue"
+                                  Login 
+                                    => formulaire 
+                                        champ pour saisir un email
+                                        champ pour saisir un password 
+                                        bouton de soumission 
+                                  Profil 
+                                    => contient le texte Bienvenue sur le profil 
+
+Créer un menu un Tab Bottom => contient 3 liens 
+                            => lien vers le screen Accueil 
+                            => lien vers la page de Connexion 
+                            => lien vers Profil 
