@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View , Button } from 'react-native'
 import React , {useContext} from 'react'
 import { AuthContext } from '../context/AuthContext'
+import FormulaireAddArticle from '../composant/FormulaireAddArticle'
 
 export default function Profil() {
   const {logout} = useContext(AuthContext)
@@ -12,6 +13,7 @@ export default function Profil() {
           logout()
         }} />
       </View>
+      <FormulaireAddArticle />
     </View>
   )
 }

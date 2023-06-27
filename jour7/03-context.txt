@@ -88,3 +88,17 @@ function B({children}){
 // exécuté le context 
 
 // 3 étapes => utiliser le contexte 
+
+cas pratique : 
+
+dans la page profil vous allez ajouter un formulaire 
+qui contient deux champs TextInput 
+=> titre 
+=> contenu 
++ 1 bouton 
+=> bouton de soumission
+
+=> lorsque vous soumettez le formulaire ajouter au ArticleContext 
+{ titre : "titre saisie" , contenu : "contenu saisi" }
+
+Dans le composant Home => afficher la liste des articles disponibles dans le ArticleContext 
