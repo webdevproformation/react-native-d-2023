@@ -1,0 +1,56 @@
+
+mis en place l'équivalent <a href=""></a>
+
+dans React Native 
+
+=> définir un router 
+=> définir le router définir sa manière de s'afficher 
+
+=> navigation Stack => App.js 
+
+<NavigatorContainer>
+    <Stack.Navigator>
+        <Stack.Screen name={'accueil'} component={Home} />
+        <Stack.Screen name={'login'} component={Login} />
+    </Stack.Navigator>
+</NavigatorContainer>
+
+<Button title={'se connecter'} onPress={function(){
+    navigation.navigate("login")
+}} />
+
+
+<NavigatorContainer>
+    <Tab.Navigator>
+        <Tab.Screen name={'accueil'} component={Home} options={{
+            tabBarIcon : function(){
+                return <Icone name={''} size={''} color={} />
+            }
+        }}/>
+        <Tab.Screen name={'login'} component={Login} options={{
+            tabBarIcon : function(){
+                return <Icone name={''} size={''} color={} />
+            }
+        }}/>
+    </Stack.Navigator>
+</NavigatorContainer>
+
+
+<NavigatorContainer>
+    <Tab.Navigator screenOptions={{ 
+         tabBarActiveTintColor : "red" , 
+        tabBarInactiveTintColor : "blue"
+    }}>
+        <Tab.Screen name={'accueil'} component={Home} options={{
+            tabBarIcon : function({color}){
+                return <Icone name={''} size={} color={color} />
+            }
+        }}/>
+        <Tab.Screen name={'login'} component={Login} options={{
+            tabBarIcon : function({color}){
+                return <Icone name={''} size={} color={color} />
+            }
+        }}/>
+    </Stack.Navigator>
+</NavigatorContainer>
+
