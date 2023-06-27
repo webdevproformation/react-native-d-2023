@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import MenuPrincipal from './composant/MenuPrincipal';
+import { AuthContextProvider } from './context/AuthContext';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <MenuPrincipal />
-      <StatusBar style="auto" />
-    </View>
+    <AuthContextProvider>
+      <View style={styles.container}>
+        <MenuPrincipal />
+        <StatusBar style="auto" />
+      </View>
+    </AuthContextProvider>
   );
 }
 

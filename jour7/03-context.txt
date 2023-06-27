@@ -57,3 +57,34 @@ npm i react-native-vector-icons
 
 npm start
 
+function A(){
+    return <B nom={'alain'}/>
+}
+
+function B({nom}){
+
+}
+
+
+function A(){
+    return <B>
+            <C/>
+            <D/>
+            <Text ></Text>
+        </B>
+}
+
+function B({children}){
+
+}
+
+// 1 etape 1
+// creer le context => le fichier AuthContext.jsx 
+// export AuthContext
+// export AuthContextProvider 
+
+// 2 il faut emballer notre application avec AuthContextProvider
+// App.js 
+// exécuté le context 
+
+// 3 étapes => utiliser le contexte 
