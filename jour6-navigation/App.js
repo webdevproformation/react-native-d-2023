@@ -19,7 +19,9 @@ export default function App() {
       <NavigationContainer>
         <Tab.Navigator screenOptions={{ 
             tabBarActiveTintColor : "red" , 
-            tabBarInactiveTintColor : "blue" }}>
+            tabBarInactiveTintColor : "blue",
+            unmountOnBlur: true
+            }}>
             <Tab.Screen name={'accueil'} component={Home} options={{
                 headerTitle : "Bienvenue",
                 headerTitleAlign : "center",
