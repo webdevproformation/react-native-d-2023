@@ -5,10 +5,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
 import Home from "./screens/Home"
 import NousContacter from './screens/NousContacter'
-import Login from './screens/Login'
+// import Login from './screens/Login'
 import Exo1 from './screens/Exo1'
 
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
+import MenuLogin from './composant/MenuLogin'
 
 const Tab = createBottomTabNavigator() ; // créer le Router 
 
@@ -31,7 +32,8 @@ export default function App() {
                     return <MaterialCommunityIcons name={'contacts'} size={size} color={color} />
                 }
             }}/>
-            <Tab.Screen name={'login'} component={Login} options={{
+            <Tab.Screen name={'login'} component={ MenuLogin } options={{
+                headerShown : false , 
                 tabBarIcon : function({ color, size }){
                     return <MaterialCommunityIcons name={'login'} size={size} color={color} />
                 }
