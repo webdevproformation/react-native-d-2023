@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View , TextInput , Button} from 'react-native'
-import React , {useState} from 'react'
+import React , {useState , useContext} from 'react'
+import { AuthContext } from '../context/AuthContext'
 export default function Login() {
-    const [identifiants , setIdentifiants] = useState({ email : "", password : ""  })
-
+    const [identifiants , setIdentifiants] = useState({ email : "toto@yahoo.fr", password : "azerty"  })  
+    const {login} = useContext(AuthContext); 
   return (
     <View>
       <Text>Login</Text>
@@ -17,7 +18,9 @@ export default function Login() {
         setIdentifiants(cloneIdentifiants)
       }} value={ identifiants.password }/>
       <View style={{ flexDirection : "row" , justifyContent : "center" }}>
-        <Button title={'connexion'} onPress={function(){}}  color={'green'}/>
+        <Button title={'connexion'} onPress={function(){
+          login(identifiants)
+        }}  color={'green'}/>
       </View>
     </View>
   )
