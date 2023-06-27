@@ -57,3 +57,19 @@ dans React Native
 => Navigation Nested => Imbriquée 
 => 2 types de navigation en même temps 
 
+
+Cas pratique :
+
+Vous allez ajouter une navigation Imbriquée dans le composant "Nous contacter"
+Ajouter dans ce composant un bouton "faire une demande technique"
+
+une fois que vous aurez cliquez sur le bouton => 
+
+un nouvel écran s'affiche avec un formulaire de 3 champs 
+email 
+sujet 
+commentaire => qui est un champ de saisie multiligne
+un bouton de validation 
+
+Créer la navigation imbriquée 
+Créer le composant DemandeTechnique 
