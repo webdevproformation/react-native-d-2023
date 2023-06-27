@@ -9,8 +9,20 @@ export function AuthContextProvider({children}){ // {children} // ça doit être
         password : "azerty",
         isLogged : false 
     })
-    function login(){}
-    function logout(){}
+    function login(identifiants){
+        if(identifiants.email === profil.email && identifiants.password === profil.password){
+            const cloneProfil = {...profil}
+            cloneProfil.isLogged = true 
+            setProfil(cloneProfil)
+            return true 
+        }
+        return false 
+    }
+    function logout(){
+        const cloneProfil = {...profil}
+        cloneProfil.isLogged = false 
+        setProfil(cloneProfil)
+    }
     return <AuthContext.Provider value={{ profil , login , logout }}>
         {children}
     </AuthContext.Provider>
