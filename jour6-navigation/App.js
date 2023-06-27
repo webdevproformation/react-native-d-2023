@@ -4,12 +4,13 @@ import { NavigationContainer } from "@react-navigation/native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
 import Home from "./screens/Home"
-import NousContacter from './screens/NousContacter'
+// import NousContacter from './screens/NousContacter'
 // import Login from './screens/Login'
 import Exo1 from './screens/Exo1'
 
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
 import MenuLogin from './composant/MenuLogin'
+import MenuContacter from './composant/MenuContacter'
 
 const Tab = createBottomTabNavigator() ; // créer le Router 
 
@@ -29,7 +30,8 @@ export default function App() {
                     return <MaterialCommunityIcons name={'home'} size={size} color={color} />
                 }
             }}/>
-            <Tab.Screen name={'nous-contacter'} component={NousContacter} options={{
+            <Tab.Screen name={'nous-contacter'} component={MenuContacter} options={{
+                headerShown : false , 
                 tabBarIcon : function({ color, size }){
                     return <MaterialCommunityIcons name={'contacts'} size={size} color={color} />
                 }
