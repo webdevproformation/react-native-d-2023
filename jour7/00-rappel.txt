@@ -54,3 +54,6 @@ dans React Native
     </Stack.Navigator>
 </NavigatorContainer>
 
+=> Navigation Nested => Imbriquée 
+=> 2 types de navigation en même temps 
+
