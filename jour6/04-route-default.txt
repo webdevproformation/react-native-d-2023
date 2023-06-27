@@ -1,0 +1,15 @@
+
+
+
+j'ai une question avec les Stack comment on choisie la page par défaut ?
+
+   <Stack.Navigator>
+        <Stack.Screen name={'connexion'} component={Login} /> **** premier default
+        <Stack.Screen name={'mot-de-passe-oublie'} component={MotPassOublie} />
+    </Stack.Navigator>
+
+
+<Stack.Navigator initialRouteName="connexion">
+        <Stack.Screen name={'connexion'} component={Login} /> 
+        <Stack.Screen name={'mot-de-passe-oublie'} component={MotPassOublie} />
+    </Stack.Navigator>
