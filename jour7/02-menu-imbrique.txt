@@ -1,0 +1,15 @@
+
+Tab => App.js 
+
+    Accueil  =========> lien vers un composant 
+    Contacter =====> lien vers un sous menu 
+
+        Stack => MenuContacter (sous menu )
+        Contacter        ===========> composant 
+        DemandeTechnique  ===========> composant 
+    Login  =====> lien vers un sous menu 
+
+        Stack => MenuLogin 
+        Login           ===========> composant 
+        MotPassOublie   ===========> composant 
+    Exo1    =========> lien vers un composant 
