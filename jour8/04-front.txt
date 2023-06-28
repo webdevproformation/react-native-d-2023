@@ -71,3 +71,13 @@ https://docs.expo.dev/versions/latest/sdk/crypto/
 stopper le server 
 
 npx expo install expo-crypto
+
+créer un nouveau composant Exo2 
+ l'objet de Exo2 afficher la liste de tous les clients
+ disponibles dans la collection client
+
+ afficher 
+ nom 
+ email 
+ role 
+ (ne pas afficher leur password )
