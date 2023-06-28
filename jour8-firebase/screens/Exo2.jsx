@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , FlatList } from 'react-native'
+import { StyleSheet, Text, View , FlatList , Button } from 'react-native'
 import React , {useEffect, useState} from 'react'
 import { db } from '../config/firebase'
 import { collection , getDocs } from "firebase/firestore"
@@ -24,6 +24,10 @@ export default function Exo2() {
                 <Text style={{ fontSize : 20 }}>{item.nom}</Text>
                 <Text>{item.email}</Text>
                 <Text>{item.role}</Text>
+                <View style={{ flexDirection : "row"  }}>
+                    <Button title={'modifier'} onPress={function(){}} color={'orange'} />
+                    <Button title={'supprimer'} onPress={function(){}} color={'red'} />
+                </View>
             </View>
         }}
         keyExtractor={function(item){
