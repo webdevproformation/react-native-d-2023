@@ -5,10 +5,29 @@ jour8-firebase
 cd jour8-firebase
 
 npm install @react-navigation/native
-expo install react-native-screens react-native-safe-area-context
+npx expo install react-native-screens react-native-safe-area-context
 npm install @react-navigation/drawer
 npm install @react-navigation/native-stack
 npm install firebase 
 
 npm start 
+
+npx expo start --offline
+
+=> Créer 2 composants 
+
+=> AjouterArticle.jsx 
+contient un formulaire avec 2 champs 
+titre 
+contenu 
+
++ un bouton 
+
+=> ListeArticles 
+=> afficher un titre  => Liste des articles disponibles sur Firebase 
+
+
+
+
+
 
