@@ -1,0 +1,56 @@
+si plusieurs composants doivent partager des informations entre eux ET qu'ils ne sont pas Parent (relation Parent / Enfant)
+
+=> utiliser Context 
+
+=> state global => qu'il soit utilisable sur PLUSIEURS composants en même temps quelquesoit leur relation (position dans l'arbre des composants )
+
+=> si un composant modifie le state global (context) 
+=> automatiquement tous les composants qui l'utilisent => sont impactés 
+
+1 créer un fichier ....Context.jsx qui contient 2 choses 
+ export const ...Context = createContext()
+ export function ...ContextProvider({children}){
+    return <...Context.Provider value={{ les , valeurs, à , partager }}>
+    </...Context.Provider>
+ }
+
+2 App.js => exécuter le contexte
+<...ContextProvider>
+    <App />
+</...ContextProvider>
+
+3 dans les composants on va utiliser les éléments partagés 
+import {useContext} from "react"
+import {...Context} from "../context/...Context"
+
+dans le composant 
+
+const {à} = useContext(...Context)
+
+-----------------
+
+Navigation imbriquée 
+
+navigation principale  => App.js / Fichier dédié 
+
+const Tab = create....()
+<NavigationContainer>
+    <Tab.Navigator>
+        <Tab.screen name={''} component={MentionLegal} />
+        <Tab.screen name={''} component={Demo} />
+        <Tab.screen name={''} component={MenuImbrique} />
+    </Tab.Navigator>
+</NavigationContainer>
+
+navigation imbriquée => dans un autre fichier 
+Menu
+
+const Stack = create....()
+function MenuImbrique{
+    return <Stack.Navigator>
+        <Stack.screen name={''} component={Home} />
+        <Stack.screen name={''} component={Contact} />
+</Stack.Navigator>
+}
+
+
