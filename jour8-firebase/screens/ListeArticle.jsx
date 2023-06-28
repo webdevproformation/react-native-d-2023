@@ -1,10 +1,35 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View , FlatList } from 'react-native'
+import React , {useState , useEffect} from 'react'
+import { db } from '../config/firebase'
+import {getDocs , collection } from "firebase/firestore"
 
 export default function ListeArticle() {
+
+    const [articles , setArticles] = useState([])
+    useEffect( function(){
+        getDocs(collection(db, "articles"))
+            .then(function(reponse){ 
+                const resultat = reponse.docs.map(function(doc){
+                    return doc.data()
+                })
+                setArticles(resultat)
+            })
+    } , [])
+
   return (
     <View>
       <Text>ListeArticle</Text>
+      <FlatList 
+        data={articles}
+        renderItem={function({item}){
+            return <View>
+                <Text style={{fontSize : 25}}>{item.titre}</Text>
+                <Text>{item.contenu}</Text>
+            </View>
+        }}
+        keyExtractor={function(item){ return item.title }}
+      />
+      
     </View>
   )
 }

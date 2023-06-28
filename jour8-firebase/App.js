@@ -13,7 +13,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Drawer.Navigator>
+        <Drawer.Navigator screenOptions={{
+          unmountOnBlur : true
+        }}>
           <Drawer.Screen name={'ajouter-article'} component={AjouterArticle} />
           <Drawer.Screen name={'liste-article'} component={ListeArticle} />
           <Drawer.Screen name={'exo1'} component={Exo1} />
