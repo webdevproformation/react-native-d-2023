@@ -45,3 +45,20 @@ npm start
 
 expo start -c 
 
+cas pratique 
+
+créer un nouveau composant Exo1 
+
+ce composant contient un formulaire avec 4 champs 
+
+=> nom   <TextInput />
+=> email 
+=> password 
+=> role 
+
+et un bouton de soumission
+
+=> lorsque vous avez cliquer sur le bouton =>
+ajouter dans le module Firestore de Firebase un nouveau document dans une collection qui s'appelle clients 
+=> puis vous videz le formulaire des valeurs saisies 
+=> afficher un bandeau en vert qui annonce que le profil client a bien été enregistré dans la base ! 
