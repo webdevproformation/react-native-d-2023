@@ -27,6 +27,7 @@ contenu
 => afficher un titre  => Liste des articles disponibles sur Firebase 
 
 
+npx expo install react-native-gesture-handler@~2.9.0 react-native-reanimated@~2.14.4
 
 
 
