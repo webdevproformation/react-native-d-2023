@@ -5,6 +5,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer"
 
 import AjouterArticle from './screens/AjouterArticle';
 import ListeArticle from './screens/ListeArticle';
+import Exo1 from './screens/Exo1';
 
 const Drawer = createDrawerNavigator()
 
@@ -15,6 +16,7 @@ export default function App() {
         <Drawer.Navigator>
           <Drawer.Screen name={'ajouter-article'} component={AjouterArticle} />
           <Drawer.Screen name={'liste-article'} component={ListeArticle} />
+          <Drawer.Screen name={'exo1'} component={Exo1} />
         </Drawer.Navigator>
       </NavigationContainer>
       

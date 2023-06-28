@@ -62,3 +62,12 @@ et un bouton de soumission
 ajouter dans le module Firestore de Firebase un nouveau document dans une collection qui s'appelle clients 
 => puis vous videz le formulaire des valeurs saisies 
 => afficher un bandeau en vert qui annonce que le profil client a bien été enregistré dans la base ! 
+
+
+// utiliser une librairie qui permet de hasher le mot de passe qui va être stocké en base de donnée 
+
+https://docs.expo.dev/versions/latest/sdk/crypto/
+
+stopper le server 
+
+npx expo install expo-crypto
