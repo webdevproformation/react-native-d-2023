@@ -1,0 +1,14 @@
+npx create-expo-app --template
+Blank
+jour8-firebase
+
+cd jour8-firebase
+
+npm install @react-navigation/native
+expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/drawer
+npm install @react-navigation/native-stack
+npm install firebase 
+
+npm start 
+

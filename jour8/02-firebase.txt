@@ -1,0 +1,23 @@
+=> vous allez vous connecter avec un compte gmail
+
+=> laisser la page web dans laquelle vous vous êtes connecté ouverte 
+
+=> ouvrir un nouvel onglet 
+=> firebase (google)
+=> https://firebase.google.com/
+
+=> créer un projet 
+ => service 
+    => base de données 
+    => hébergement 
+    => auth
+
+    => PaaS => Plateform As A Service 
+
+=> créer un projet 
+=> activer un ou plusieurs services 
+=> récupérer le sdk => fichier avec des codes => 
+
+=> aller sur notre projet React Native 
+
+

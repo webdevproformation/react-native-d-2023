@@ -1,0 +1,41 @@
+projet html 
+projet react 
+projet react native 
+
+=> il n'y a pas de base de données 
+
+l'application sera découpée en 2 parties 
+
+partie front  => client => 
+permet d'afficher des informations / mis en page 
+faire de demande au serveur 
+
+API => Application Program Interface axios / fetch 
+
+fetch("....")
+    .then(function(reponse){ return reponse.json() })
+    .then(function(data){ console.log(data)  })
+
+partie back => serveur 
+=> traiter les demandes (recevoir / traiter / renvoyer au client)
+=> stocker l'information 
+
+=> si je veux utiliser axios / fetch  => j'ai besoin de créer mon propre serveur 
+=> la semaine prochaine NodeJS et Express 
+
+=> utiliser une solution online => Firebase 
+=> partie back => serveur 
+
+Firebase => gratuit (petite application)
+         => facile à mettre en oeuvre 
+         => online (pas besoin d'avoir acheter un hébergement)
+         => juste besoin d'un compte gmail pour pouvoir l'utiliser 
+
+         => tout : Base (NoSQL) / traitement / machine qui contient la base et les traitements
+         => google 
+         => partie de la suite logicielle de Google comme Google Drive 
+
+
+
+
+
