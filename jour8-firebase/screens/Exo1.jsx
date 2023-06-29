@@ -16,7 +16,7 @@ export default function Exo1() {
         const regex =  /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
         if(!regex.test(client.password))
         {
-            alert("password invalide !")
+            alert("le mot de passe doit contenir 8 lettres avec majsucule minuscule et chiffre")
             return
         }
 

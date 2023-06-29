@@ -2,10 +2,12 @@ import { StyleSheet, Text, View , FlatList , Button } from 'react-native'
 import React , {useEffect, useState} from 'react'
 import { db } from '../config/firebase'
 import { collection , getDocs , deleteDoc , doc } from "firebase/firestore"
+import ModifClient from '../composant/ModifClient'
 
 export default function Exo2() {
     const [clients , setClients] = useState([])
     const [update, setUpdate] = useState(true)
+    const [id, setId] = useState("")
     useEffect( function(){
         getDocs(collection(db, "clients"))
             .then(function(reponse){
@@ -30,15 +32,23 @@ export default function Exo2() {
         data={clients}
         renderItem={function({item}){
             return <View >
-                <Text style={{ fontSize : 20 }}>{item.nom}</Text>
-                <Text>{item.email}</Text>
-                <Text>{item.role}</Text>
-                <View style={{ flexDirection : "row"  }}>
-                    <Button title={'modifier'} onPress={function(){}} color={'orange'} />
-                    <Button title={'supprimer'} onPress={function(){
-                        supprimer(item.id)
-                    }} color={'red'} />
-                </View>
+                { id === item.id ? 
+                 <ModifClient item={item} setId={setId} setUpdate={setUpdate} />
+                 :
+                 <View>
+                    <Text style={{ fontSize : 20 }}>{item.nom}</Text>
+                    <Text>{item.email}</Text>
+                    <Text>{item.role}</Text>
+                    <View style={{ flexDirection : "row"  }}>
+                        <Button title={'modifier'} onPress={function(){
+                            setId(item.id)
+                        }} color={'orange'} />
+                        <Button title={'supprimer'} onPress={function(){
+                            supprimer(item.id)
+                        }} color={'red'} />
+                    </View>
+                 </View>
+            }
             </View>
         }}
         keyExtractor={function(item){
