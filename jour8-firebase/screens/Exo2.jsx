@@ -31,7 +31,7 @@ export default function Exo2() {
             </View>
         }}
         keyExtractor={function(item){
-            return item.nom
+            return Math.random().toString()
         }}
     />
     </View>

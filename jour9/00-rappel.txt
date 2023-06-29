@@ -1,0 +1,57 @@
+Firebase 
+
+=> Paas => Plateform As A Service 
+=> tu vas sur le site https://firebase.google.com/
+=> connection via ton compte gmail 
+
+=> site internet qui permet de créer rapidement et facilement
+=> Plateform =>
+    - base de données
+    - hébergement 
+    - traitements
+
+=> 20 min
+- connection 
+- créer un projet 
+- activer le service Firebase Firestore (base de données)
+- SDK (identifiants de connexion )
+
+=> gratuit jusqu'à un quota 
+
+----------------------
+
+=> créer un projet 
+=> créer un fichier config/firebase.js (copier coller le SDK )
+=> npm i firebase 
+
+=> addDoc(collection(db, "table") , donneeFormulaire ).then(function(){})
+// INSERT INTO 
+
+=> getDocs(collection(db, "table")).then(function(){})
+// SELECT * FROM 
+
+
+// documentation officielle de firebase/firestore 
+
+toutes fonctions de bases de firebase :
+https://firebase.google.com/docs/firestore/manage-data/add-data?hl=fr
+
+SELECT * FROM WHERE 
+https://firebase.google.com/docs/firestore/query-data/get-data?hl=fr
+
+=> fetch().then()
+=> axios().then()
+
+// redémarrer le projet d'hier 
+
+
+// créer un nouveau composant qui s'appelle Exo3 
+// ce composant permet d'ajouter des livres dans une collection livres stockées sur Firebase 
+// ce composant affiche un formulaire avec 3 champs 
+// titre 
+// couverture => url d'une image 
+// auteur => nom 
+
+// une fois que vous avez soumis votre formulaire 
+// ça va enregistrer dans la collection auteur les données saisies 
+// automatiquement sous le formulaire afficher la liste des livres disponibles dans la collection livres 
