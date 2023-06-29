@@ -27,9 +27,8 @@ export default function ListeArticle() {
                 <Text>{item.contenu}</Text>
             </View>
         }}
-        keyExtractor={function(item){ return item.title }}
+        keyExtractor={function(){ return Math.random().toString() }}
       />
-      
     </View>
   )
 }

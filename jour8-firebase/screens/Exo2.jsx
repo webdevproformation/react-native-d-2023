@@ -10,7 +10,7 @@ export default function Exo2() {
         getDocs(collection(db, "clients"))
             .then(function(reponse){
                 const resultat = reponse.docs.map(function(doc){
-                    return { ...doc.data() , id : doc.id}
+                    return { ...doc.data() , id : doc.id }
                 })
                 setClients(resultat)
             })
