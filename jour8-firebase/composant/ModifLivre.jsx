@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , TextInput , Button } from 'react-native'
+import { StyleSheet,  View , TextInput , Button } from 'react-native'
 import React , {useState} from 'react'
 import { db } from '../config/firebase'
 import {doc , updateDoc } from "firebase/firestore"
@@ -20,8 +20,6 @@ export default function ModifLivre({item , setId, setUpdate}) {
                 setUpdate(function(update){ return !update})
             })
     }
-
-
     return (
     <View>
         <TextInput 

@@ -1,0 +1,64 @@
+
+si je veux supprimer un document dans la base firebase 
+
+
+useEffect(function(){
+    getDocs(collection(db, "table))
+        .then(function(){
+            setLivres() // mis à jour visuel du composant 
+        })
+}, [update]) // réexécution de cette fonction 
+
+function supprimer(){
+    deleteDoc(doc(db, "table", id )) // supprimer dans la base le document 
+        .then(function(){ 
+            setUpdate() // modifier le state update
+        })
+}
+<Button onPress={function(){
+    supprimer(item.id)
+}}
+
+
+
+------------------------
+
+pour la mis à jour 
+
+etape 1 => transformer la liste 
+        => liste dans laquelle j'ai un formulaire sur lequel je vais pouvoir modifier 
+
+const [id, setId] = useState("")
+
+{ id === item.id ?
+    <ModifierLivre item={} setUpdate={} setId={} /> 
+    : 
+    <Article /> 
+ }
+
+
+<Button  onPress={function(){
+    setId(item.id)
+}}>
+
+
+etape 2 => écrire dans les différents champs du formulaire 
+        => GO => lancer la mise à jour 
+        et faire disparaitre le formulaire 
+
+function ModifierLivre({item , setUpdate , setId}){
+    function submit(){
+        updateDoc(doc(db , "table", id) , livre). // effectivement mettre à jour la base 
+            then(function(){
+                setId("") // permet de faire disparaitre formulaire 
+                setUpdate() // mettre à jour la liste 
+            })
+    }
+    <TextInput />
+    <TextInput />
+    <TextInput />
+    <Button onPress={submit}  />
+}
+
+
+
