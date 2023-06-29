@@ -59,3 +59,19 @@ https://firebase.google.com/docs/firestore/query-data/get-data?hl=fr
 
 // https://www.nuxit.com/pack-etudiant/
 code : DORANCO20
+
+=> projet en PHP 
+
+
+function A(){
+
+    useEffect(function(){}, []) => exécuté UNIQUEMENT 1 fois lors du chargement du composant 
+
+    useEffect(function(){}, [state]) => exécuté lorsque le state est modifiée
+
+    useEffect(function(){
+        return function(){} => exécutée lorsque le composant est supprimé de l'écran
+    }, [])
+
+    return <Text>bonjour</Text>
+}

@@ -7,6 +7,7 @@ import AjouterArticle from './screens/AjouterArticle';
 import ListeArticle from './screens/ListeArticle';
 import Exo1 from './screens/Exo1';
 import Exo2 from './screens/Exo2';
+import Exo3 from './screens/Exo3';
 
 const Drawer = createDrawerNavigator()
 
@@ -21,6 +22,7 @@ export default function App() {
           <Drawer.Screen name={'liste-article'} component={ListeArticle} />
           <Drawer.Screen name={'exo1'} component={Exo1} />
           <Drawer.Screen name={'exo2'} component={Exo2} />
+          <Drawer.Screen name={'exo3'} component={Exo3} />
         </Drawer.Navigator>
       </NavigationContainer>
       
