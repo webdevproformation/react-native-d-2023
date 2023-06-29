@@ -55,3 +55,7 @@ https://firebase.google.com/docs/firestore/query-data/get-data?hl=fr
 // une fois que vous avez soumis votre formulaire 
 // ça va enregistrer dans la collection auteur les données saisies 
 // automatiquement sous le formulaire afficher la liste des livres disponibles dans la collection livres 
+
+
+// https://www.nuxit.com/pack-etudiant/
+code : DORANCO20
