@@ -9,7 +9,7 @@ export default function ListeLivre({update , setUpdate}) {
 
     const [livres , setLivres] = useState([])
     const [id, setId] = useState("");
-    useEffect( function(){
+    useEffect( function() {
         getDocs(collection(db, "livres"))
             .then(function(reponse){
                 const resultat = reponse.docs.map(function(doc){

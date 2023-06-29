@@ -1,0 +1,3 @@
+dans le composant Exo2 
+sur chaque bouton supprimer 
+faire en sorte que le clique entraine vraiment la suppression du document en base de données 

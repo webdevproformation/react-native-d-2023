@@ -1,6 +1,4 @@
-
 si je veux supprimer un document dans la base firebase 
-
 
 useEffect(function(){
     getDocs(collection(db, "table))
@@ -35,7 +33,6 @@ const [id, setId] = useState("")
     : 
     <Article /> 
  }
-
 
 <Button  onPress={function(){
     setId(item.id)
