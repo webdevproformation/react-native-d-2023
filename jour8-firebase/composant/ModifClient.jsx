@@ -76,7 +76,7 @@ export default function ModifClient({item, setId , setUpdate}) {
         onChangeText={function(textSaisi){ remplir(textSaisi , "password" ) }}
         />
       <TextInput 
-        placeholder='role'  
+        placeholder='role'
         style={styles.input} 
         value={client.role}
         onChangeText={function(textSaisi){ remplir(textSaisi , "role" ) }}

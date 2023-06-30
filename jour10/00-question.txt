@@ -1,0 +1,10 @@
+expo deploy 
+
+=> si tu as besoin de deployer 
+ton application sur Store 
+
+=> administratif 
+
+=> https://www.youtube.com/watch?v=uUv-7iMO5Fg
+
+=> app.json ( fichier )

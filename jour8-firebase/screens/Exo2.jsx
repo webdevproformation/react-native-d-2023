@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , FlatList , Button } from 'react-native'
+import { StyleSheet, Text, View , FlatList , Button , ActivityIndicator } from 'react-native'
 import React , {useEffect, useState} from 'react'
 import { db } from '../config/firebase'
 import { collection , getDocs , deleteDoc , doc } from "firebase/firestore"
@@ -14,7 +14,9 @@ export default function Exo2() {
                 const resultat = reponse.docs.map(function(doc){
                     return { ...doc.data() , id : doc.id }
                 })
-                setClients(resultat)
+                setTimeout(function(){
+                    setClients(resultat)
+                }, 3000)
             })
     }, [update]) // ici dans le useEffect qui est dépendant de la valeur du state update
 
@@ -23,6 +25,14 @@ export default function Exo2() {
             .then(function(){
                 setUpdate(!update)
             })
+    }
+
+
+    if(clients.length === 0) {
+        return <View style={{ flex : 1 , alignItems : "center" , justifyContent : "center" }}>
+            <ActivityIndicator size={'large'}/>
+            <Text>en attente des données </Text>
+        </View>
     }
 
   return (
