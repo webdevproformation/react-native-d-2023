@@ -48,7 +48,7 @@ export default function Exo1() {
        }
   return (
     <View style={styles.box}>
-      <Text>Exo1</Text>
+       <Text>Exo1</Text>
       <TextInput placeholder='nom' style={styles.input} onChangeText={function(texteSaisi){ remplir(texteSaisi , "nom") }} value={client.nom} />
       <TextInput placeholder='email' style={styles.input} onChangeText={function(texteSaisi){ remplir(texteSaisi , "email") }} value={client.email} />
       <TextInput placeholder='password' 

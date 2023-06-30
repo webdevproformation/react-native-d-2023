@@ -32,7 +32,7 @@ export default function Exo2() {
         return <View style={{ flex : 1 , alignItems : "center" , justifyContent : "center" }}>
             <ActivityIndicator size={'large'}/>
             <Text>en attente des données </Text>
-        </View>
+        </View>   
     }
 
   return (

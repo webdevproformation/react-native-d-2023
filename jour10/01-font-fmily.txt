@@ -1,0 +1,6 @@
+https://github.com/kylerjensen/react-native-font-faces
+https://docs.expo.dev/versions/latest/sdk/font/
+
+npm i react-native-font-faces
+
+npx expo install expo-font

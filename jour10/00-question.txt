@@ -8,3 +8,34 @@ ton application sur Store
 => https://www.youtube.com/watch?v=uUv-7iMO5Fg
 
 => app.json ( fichier )
+
+function App(){
+    return <View style={{flex : 1}}>
+        <A />
+    </View>
+}
+
+
+function A (){
+    <View style={{flex : 1}}>
+        <ScrollView>
+        </ScrollView>
+    </View>
+}
+
+
+{ 
+    "oeuvre" : {
+        "id........" : {
+            titre : ""
+            description  : ""
+            commentaires : {
+                "id...." : { 
+                    email : ""
+                    message : ""
+                }
+            }
+        }
+    }
+
+}

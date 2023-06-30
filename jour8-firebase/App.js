@@ -20,7 +20,7 @@ export default function App() {
           }}>
           <Drawer.Screen name={'ajouter-article'} component={AjouterArticle} />
           <Drawer.Screen name={'liste-article'} component={ListeArticle} />
-          <Drawer.Screen name={'exo1'} component={Exo1} />
+          {/** <Drawer.Screen name={'exo1'} component={Exo1} />*/}
           <Drawer.Screen name={'exo2'} component={Exo2} />
           <Drawer.Screen name={'exo3'} component={Exo3} />
         </Drawer.Navigator>
